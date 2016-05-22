@@ -1,0 +1,83 @@
+body{
+	width: 100%;
+	background-color: black;
+}
+
+#container {
+	margin: 0 auto;
+	width: 500px;
+	height: 700px;
+	background-color: black;
+	border: 1px solid red;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 120px;
+	margin-bottom: 40%;
+	color: violet;
+}
+
+
+#menu {
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	border: 2px solid red;
+}
+
+#monumental {
+	width: 49%;
+	height: 99%;
+	float: right;
+	border: 0.5px solid orange;
+}
+
+#monumental h3 {
+	margin-top: 70px;
+}
+
+
+#small {
+	width: 49.5%;
+	height: 35%;
+	border: 0.5px solid orange;
+}
+
+#media {
+	width: 49.5%;
+	height: 63%;
+	border: 1px solid orange;
+
+}
+
+#media h4{
+	margin-top: 50px;
+}
+
+#media, #monumental, #small {
+	text-align: center;
+	color: violet;
+}
+
+#media:hover {
+background-color: #6d1111;}
+
+#monumental:hover {
+	background-color: #780c0c;
+}
+
+#small:hover {
+	background-color: #890b0b;
+}
+
+
+footer {
+	color: white;
+	float: right;
+	padding: 3px;
+}
+
+
+
+
