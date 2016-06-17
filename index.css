@@ -14,6 +14,24 @@ body{
 
 }
 
+.body2 {
+	background-image: url('images/media/sailboat V.jpg');
+	width: 100%;
+	height: auto;
+	background-size: cover;
+	
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	  transition: all 5s ease-out;
+    -webkit-transition: all 5s ease;
+    -moz-transition: all 5s ease;
+    -o-transition: all 5s ease;
+	}
+
 #container {
 	margin: 0 auto;
 	width: 500px;
@@ -22,7 +40,7 @@ body{
 	/*border: 1px solid red;*/
 }
 
-h2 {
+#name {
 
 	width: 60%;
 	text-align: center;
@@ -37,9 +55,15 @@ h2 {
 #menu {
 	width: 35%;
 	height: 35%;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
+	font-size: 33px;
 	margin-left: 550px;
 	opacity: 0.0;
+
+	 transition: all 7s ease-out;
+    -webkit-transition: all 7s ease;
+    -moz-transition: all 7s ease;
+    -o-transition: all 7s ease;
 	
 }
 
