@@ -1,13 +1,18 @@
 $(document).ready(function(){
 	$("#name").hover(function(){
     $("#menu").animate({ opacity: '1.0'});
-    $('body').addClass('body2');
-    })   
-	 
+    $('body').addClass('container2');
+    $("#nav-bar").css('display', 'inline');
+    $('#container').animate({opacity: 0.2}, 5000);
+    }) 
 
-var showText = function (target, message, index, interval) {   
-  if (index < message.length) {
+
+	 
+function showText (target, message, index, interval) {    
+  if (index < message.length) { 
     $(target).append(message[index++]);
+    
+    
     setTimeout(function () { showText(target, message, index, interval); }, interval);
   }
 }
@@ -15,12 +20,18 @@ var showText = function (target, message, index, interval) {
 
 $(function () {
 
-  showText("#name", "Snejana Simeonova", 0, 300); 
+  showText("#name", "Snejana Simeonova", 0, 200); 
     
 
 });
 
-}) 
+})
+
+function myFunction() {
+    var something = document.getElementsByClassName("topnav")[0];
+    something.classList.toggle("responsive");
+    console.log(something)
+} 
 
 
 
