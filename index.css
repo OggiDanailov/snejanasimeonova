@@ -18,7 +18,7 @@ body{
 .container2 {
 	background-image: url('images/media/sailboat V.jpg');
 	margin: 0 auto;
-	width: 70%;
+	width: 60%;
 	height: 100%;
 	/*border: 4px solid red;*/
 	opacity: 1.0;
@@ -48,7 +48,6 @@ body{
   	color: white;
   	text-shadow: 3px 3px 3px grey;
   	position: relative;
-
 	width: 100%;
 	text-align: center;
 	margin: 0 auto;
@@ -59,13 +58,21 @@ body{
 }
 
 .clearfix {
-	visibility: hidden;
+	display: none;
+}
+
+nav li a {
+    display: block;
+}
+
+nav li a:hover {
+    background-color: green;
 }
 
 nav {
 	height: 40px;
     width: 100%;
-    background: grey;
+    background: none;
     font-size: 11pt;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
@@ -100,6 +107,7 @@ nav li {
 }
 .clearfix {
     *zoom: 1;
+    cursor: pointer;
 }
 
 	nav a {
@@ -110,6 +118,7 @@ nav li {
     text-decoration: none;
     line-height: 40px;
     text-shadow: 1px 1px 0px #283744;
+
 }
 
 	nav li a {
@@ -119,10 +128,11 @@ nav li {
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
 }
+
+
 nav li:last-child a {
     border-right: 0;
 }
-
 
 	nav a:hover, nav a:active {
     background-color: #8c99a4;

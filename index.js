@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$("#name").hover(function(){
     $("#menu").animate({ opacity: '1.0'});
     $('body').addClass('container2');
-    $(".clearfix").css('display', 'inline');
+    $(".clearfix").css('display', 'inline-block');
     $('#container').animate({opacity: 0.2}, 5000);
   }) 
 
