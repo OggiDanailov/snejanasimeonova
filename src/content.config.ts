@@ -26,6 +26,12 @@ const works = defineCollection({
       location: bilingual.optional(),
       // Position within its category; lower numbers come first.
       order: z.number().default(1000),
+      // Degrees clockwise to turn a sideways photo. The CMS may save it as text.
+      rotate: z
+        .union([z.number(), z.string()])
+        .optional()
+        .transform((v) => Number(v ?? 0))
+        .pipe(z.union([z.literal(0), z.literal(90), z.literal(180), z.literal(270)])),
     }),
 });
 

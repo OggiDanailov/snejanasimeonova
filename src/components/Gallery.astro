@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import { Image, getImage } from 'astro:assets';
 import { UI, type Locale } from '../i18n';
+import { rotated } from '../lib/rotation';
 
 interface Props {
   works: CollectionEntry<'works'>[];
@@ -13,10 +14,12 @@ const t = UI[lang];
 
 const items = await Promise.all(
   works.map(async ({ id, data }) => {
-    const full = await getImage({ src: data.image, width: Math.min(data.image.width, 1800), format: 'webp' });
+    const image = rotated(data.image, data.rotate);
+    const full = await getImage({ src: image, rotate: data.rotate, width: Math.min(image.width, 1800), format: 'webp' });
     return {
       id,
-      data,
+      image,
+      rotate: data.rotate,
       full: full.src,
       title: data.title[lang],
       details: [data.material?.[lang], data.dimensions, data.year, data.location?.[lang]].filter(Boolean).join(' · '),
@@ -38,7 +41,8 @@ const items = await Promise.all(
           data-details={item.details}
         >
           <Image
-            src={item.data.image}
+            src={item.image}
+            rotate={item.rotate}
             alt={item.title}
             widths={[400, 700, 1000]}
             sizes="(min-width: 60rem) 33vw, (min-width: 36rem) 50vw, 100vw"

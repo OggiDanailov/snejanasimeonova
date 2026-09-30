@@ -40,6 +40,21 @@ content:
         label: Photo / Снимка
         type: image
         required: true
+      - name: rotate
+        label: Rotate photo / Завъртане на снимката
+        description: 'Turns a sideways photo on the website. The preview here stays unrotated. / Завърта снимката на сайта; прегледът тук остава незавъртян.'
+        type: select
+        default: "0"
+        options:
+          values:
+            - value: "0"
+              label: No rotation / Без завъртане
+            - value: "90"
+              label: 90° right (clockwise) / 90° надясно
+            - value: "180"
+              label: 180° (upside down) / 180° (обърната)
+            - value: "270"
+              label: 90° left (counter-clockwise) / 90° наляво
       - name: title
         label: Title / Заглавие
         component: bilingual
