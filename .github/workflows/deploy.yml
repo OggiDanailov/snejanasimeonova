@@ -1,0 +1,83 @@
+# Runs on every push, including saves from Pages CMS:
+#   1. bakes "Rotate photo" choices into the image files and commits them
+#   2. builds the site
+#   3. uploads it to S3 (only on the branch named in the DEPLOY_BRANCH variable)
+#
+# Repository settings used (Settings → Secrets and variables → Actions):
+#   Variables: DEPLOY_BRANCH, S3_BUCKET, AWS_REGION, CLOUDFRONT_DISTRIBUTION_ID (optional)
+#   Secrets:   AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY
+
+name: Build and deploy
+
+on:
+  push:
+    branches: [master, astro-rebuild]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# One run per branch at a time, so quick successive saves deploy in order.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Apply photo rotations
+        run: node scripts/apply-rotations.mjs
+
+      # Commits made with the workflow token don't start another run, so this
+      # same run carries on to build the rotated photos.
+      - name: Commit rotated photos
+        run: |
+          if [ -z "$(git status --porcelain src)" ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src
+          git commit -m "Apply photo rotations"
+          # An editor may have saved again meanwhile; rebase onto it before pushing.
+          for attempt in 1 2 3; do
+            git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep 5
+          done
+          exit 1
+
+      - run: npm run build
+
+      - name: Configure AWS credentials
+        if: github.ref_name == vars.DEPLOY_BRANCH
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      - name: Upload to S3
+        if: github.ref_name == vars.DEPLOY_BRANCH
+        env:
+          BUCKET: ${{ vars.S3_BUCKET }}
+        run: |
+          # Hashed assets never change, so browsers may cache them for a year;
+          # pages must always be re-checked so edits show up straight away.
+          aws s3 sync dist/_astro "s3://$BUCKET/_astro" --delete \
+            --cache-control "public, max-age=31536000, immutable"
+          aws s3 sync dist "s3://$BUCKET" --delete --exclude "_astro/*" \
+            --cache-control "public, max-age=0, must-revalidate"
+
+      - name: Refresh CloudFront
+        if: github.ref_name == vars.DEPLOY_BRANCH && vars.CLOUDFRONT_DISTRIBUTION_ID != ''
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}" --paths "/*"

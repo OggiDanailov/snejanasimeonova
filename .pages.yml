@@ -42,7 +42,7 @@ content:
         required: true
       - name: rotate
         label: Rotate photo / Завъртане на снимката
-        description: 'Turns a sideways photo on the website. The preview here stays unrotated. / Завърта снимката на сайта; прегледът тук остава незавъртян.'
+        description: 'Turns a sideways photo. About a minute after saving, the photo is rotated for good and this resets to "No rotation" (reload the page to see it). / Завърта снимката. Около минута след запазване снимката се завърта окончателно и полето се връща на „Без завъртане“ (презаредете страницата).'
         type: select
         default: "0"
         options:

@@ -21,6 +21,9 @@
 ### Промяна или изтриване на творба
 Отворете **Works / Творби**, намерете творбата (има търсачка), променете полетата и натиснете **Save**. За изтриване – менюто **⋯** до творбата → **Delete**.
 
+### Завъртане на снимка
+Ако снимката е легнала настрани, изберете посока в **Завъртане на снимката** и натиснете **Save**. След около минута снимката се завърта окончателно – презаредете страницата, за да я видите изправена.
+
 ### Подредба
 Полето **Позиция** определя реда в раздела: по-малките числа са първи. Например, за да излезе творба най-отгоре, дайте ѝ позиция 1.
 
@@ -44,6 +47,9 @@ If only one language is filled in, the site shows that text in both languages.
 
 ### Edit or delete a work
 Open **Works / Творби**, find the work (there is a search box), change the fields and click **Save**. To delete: the **⋯** menu next to the work → **Delete**.
+
+### Rotate a photo
+If a photo is sideways, pick a direction in **Rotate photo** and click **Save**. About a minute later the photo is rotated for good – reload the page to see it upright.
 
 ### Order
 **Position** sets the order within a section: lower numbers come first. To put a work at the top, give it position 1.
