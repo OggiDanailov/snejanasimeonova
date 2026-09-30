@@ -1,0 +1,10 @@
+title:
+  en: "Nature"
+  bg: "Природа"
+category: small
+material:
+  en: "marble"
+  bg: "мрамор"
+dimensions: "50 × 18 × 20 cm"
+image: ./images/nature.jpg
+order: 500

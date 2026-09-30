@@ -1,0 +1,14 @@
+title:
+  en: "Tree"
+  bg: "Дърво"
+category: monumental
+material:
+  en: "blue limestone"
+  bg: "син варовик"
+dimensions: "270 × 100 × 70 cm"
+year: 2008
+location:
+  en: "Belgium"
+  bg: "Белгия"
+image: ./images/tree-2008.jpg
+order: 430

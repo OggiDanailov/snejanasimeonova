@@ -1,0 +1,9 @@
+title:
+  en: "Street"
+  bg: "Улица"
+category: small
+material:
+  en: "bronze"
+  bg: "бронз"
+image: ./images/street.jpg
+order: 790

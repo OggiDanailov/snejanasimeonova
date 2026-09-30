@@ -1,0 +1,14 @@
+title:
+  en: "Network"
+  bg: "Мрежа"
+category: monumental
+material:
+  en: "granite"
+  bg: "гранит"
+dimensions: "220 × 110 × 90 cm"
+year: 2015
+location:
+  en: "Spain"
+  bg: "Испания"
+image: ./images/network-2015.jpg
+order: 270

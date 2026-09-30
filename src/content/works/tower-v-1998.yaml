@@ -1,0 +1,14 @@
+title:
+  en: "Tower V"
+  bg: "Кула V"
+category: monumental
+material:
+  en: "black marble, bronze"
+  bg: "черен мрамор, бронз"
+dimensions: "200 × 45 × 45 cm"
+year: 1998
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/tower-v-1998.jpg
+order: 370

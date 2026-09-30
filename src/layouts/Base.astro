@@ -1,0 +1,37 @@
+---
+import { LOCALES, UI, type Locale } from '../i18n';
+
+interface Props {
+  lang: Locale;
+  title?: string;
+}
+
+const { lang, title } = Astro.props;
+const t = UI[lang];
+// Same page in the other language: swap the leading /en/ or /bg/.
+const otherLang = LOCALES.find((l) => l !== lang)!;
+const otherPath = Astro.url.pathname.replace(/^\/(en|bg)/, `/${otherLang}`);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title ? `${title} · ${t.siteTitle}` : t.siteTitle}</title>
+  </head>
+  <body>
+    <header>
+      <a href={`/${lang}/`}>{t.siteTitle}</a>
+      <nav>
+        <a href={`/${lang}/media/`}>{t.media}</a>
+        <a href={`/${lang}/small/`}>{t.small}</a>
+        <a href={`/${lang}/monumental/`}>{t.monumental}</a>
+        <a href={otherPath} hreflang={otherLang}>{otherLang.toUpperCase()}</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+title:
+  en: "The wave"
+  bg: "Вълната"
+category: monumental
+material:
+  en: "granite"
+  bg: "гранит"
+dimensions: "160 × 200 × 45 cm"
+year: 2002
+location:
+  en: "Japan"
+  bg: "Япония"
+image: ./images/the-wave-2002.jpg
+order: 300

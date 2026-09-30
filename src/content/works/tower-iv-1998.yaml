@@ -1,0 +1,14 @@
+title:
+  en: "Tower IV"
+  bg: "Кула IV"
+category: monumental
+material:
+  en: "black marble, bronze"
+  bg: "черен мрамор, бронз"
+dimensions: "170 × 45 × 40 cm"
+year: 1998
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/tower-iv-1998.jpg
+order: 360

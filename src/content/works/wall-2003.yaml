@@ -1,0 +1,14 @@
+title:
+  en: "Wall"
+  bg: "Стена"
+category: monumental
+material:
+  en: "travertine"
+  bg: "травертин"
+dimensions: "200 × 300 × 60 cm"
+year: 2003
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/wall-2003.jpg
+order: 440

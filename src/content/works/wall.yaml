@@ -1,0 +1,13 @@
+title:
+  en: "Wall"
+  bg: "Стена"
+category: small
+material:
+  en: "bronze"
+  bg: "бронз"
+dimensions: "80 × 100 × 35 cm"
+location:
+  en: "Belgium"
+  bg: "Белгия"
+image: ./images/wall.jpg
+order: 1030

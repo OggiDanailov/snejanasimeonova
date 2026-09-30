@@ -1,0 +1,9 @@
+title:
+  en: "Sailboat"
+  bg: "Платноходка"
+category: small
+material:
+  en: "bronze"
+  bg: "бронз"
+image: ./images/sailboat.jpg
+order: 720

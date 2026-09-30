@@ -1,0 +1,13 @@
+title:
+  en: "Window"
+  bg: "Прозорец"
+category: monumental
+material:
+  en: "marble"
+  bg: "мрамор"
+year: 2001
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/window-2001.jpg
+order: 460

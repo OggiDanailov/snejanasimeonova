@@ -1,0 +1,37 @@
+---
+// Placeholder gallery used to verify the migrated content; the real design comes later.
+import { Image } from 'astro:assets';
+import { getCollection } from 'astro:content';
+import { CATEGORIES } from '../../content.config';
+import Base from '../../layouts/Base.astro';
+import { LOCALES, UI, type Locale } from '../../i18n';
+
+export function getStaticPaths() {
+  return LOCALES.flatMap((lang) => CATEGORIES.map((category) => ({ params: { lang, category } })));
+}
+
+const lang = Astro.params.lang as Locale;
+const category = Astro.params.category as (typeof CATEGORIES)[number];
+const works = (await getCollection('works', (w) => w.data.category === category)).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const heading = UI[lang][category];
+---
+
+<Base lang={lang} title={heading}>
+  <h1>{heading}</h1>
+  <ul>
+    {
+      works.map(({ data }) => (
+        <li>
+          <Image src={data.image} alt={data.title[lang]} width={300} />
+          <p>
+            <strong>{data.title[lang]}</strong>
+            <br />
+            {[data.material?.[lang], data.dimensions, data.year, data.location?.[lang]].filter(Boolean).join(', ')}
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+</Base>

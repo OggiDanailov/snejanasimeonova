@@ -1,0 +1,14 @@
+title:
+  en: "Column"
+  bg: "Колона"
+category: monumental
+material:
+  en: "marble"
+  bg: "мрамор"
+dimensions: "280 × 70 × 60 cm"
+year: 2001
+location:
+  en: "Spain"
+  bg: "Испания"
+image: ./images/column-2001.jpg
+order: 40

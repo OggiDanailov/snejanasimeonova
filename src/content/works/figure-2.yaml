@@ -1,0 +1,9 @@
+title:
+  en: "Figure"
+  bg: "Фигура"
+category: small
+material:
+  en: "marble"
+  bg: "мрамор"
+image: ./images/figure-2.jpg
+order: 230

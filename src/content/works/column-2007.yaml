@@ -1,0 +1,14 @@
+title:
+  en: "Column"
+  bg: "Колона"
+category: monumental
+material:
+  en: "limestone"
+  bg: "варовик"
+dimensions: "250 × 70 × 70 cm"
+year: 2007
+location:
+  en: "Turkey"
+  bg: "Турция"
+image: ./images/column-2007.jpg
+order: 60

@@ -1,0 +1,14 @@
+title:
+  en: "Moon"
+  bg: "Луна"
+category: monumental
+material:
+  en: "marble"
+  bg: "мрамор"
+dimensions: "220 × 60 × 30 cm"
+year: 2007
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/moon-2007.jpg
+order: 180

@@ -1,0 +1,14 @@
+title:
+  en: "Tower X"
+  bg: "Кула X"
+category: monumental
+material:
+  en: "white and black marble, iron sticks"
+  bg: "бял и черен мрамор, железни пръти"
+dimensions: "180 × 40 × 40 cm"
+year: 1998
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/tower-x-1998.jpg
+order: 410

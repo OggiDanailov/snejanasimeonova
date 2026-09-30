@@ -1,0 +1,9 @@
+title:
+  en: "Figure I"
+  bg: "Фигура I"
+category: small
+material:
+  en: "marble"
+  bg: "мрамор"
+image: ./images/figure-i.jpg
+order: 260

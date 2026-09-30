@@ -1,0 +1,14 @@
+title:
+  en: "Net"
+  bg: "Мрежа"
+category: monumental
+material:
+  en: "marble"
+  bg: "мрамор"
+dimensions: "80 × 220 × 120 cm"
+year: 1989
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/net-1989.jpg
+order: 250

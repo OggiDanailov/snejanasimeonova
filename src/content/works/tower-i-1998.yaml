@@ -1,0 +1,14 @@
+title:
+  en: "Tower I"
+  bg: "Кула I"
+category: monumental
+material:
+  en: "black marble, iron sticks"
+  bg: "черен мрамор, железни пръти"
+dimensions: "170 × 65 × 45 cm"
+year: 1998
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/tower-i-1998.jpg
+order: 330

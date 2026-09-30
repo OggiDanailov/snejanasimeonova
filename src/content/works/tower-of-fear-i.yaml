@@ -1,0 +1,9 @@
+title:
+  en: "Tower of fear I"
+  bg: "Кула на страха I"
+category: small
+material:
+  en: "bronze"
+  bg: "бронз"
+image: ./images/tower-of-fear-i.jpg
+order: 890

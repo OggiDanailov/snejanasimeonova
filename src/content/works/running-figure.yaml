@@ -1,0 +1,13 @@
+title:
+  en: "Running figure"
+  bg: "Бягаща фигура"
+category: small
+material:
+  en: "bronze"
+  bg: "бронз"
+dimensions: "120 × 50 × 50 cm"
+location:
+  en: "Belgium"
+  bg: "Белгия"
+image: ./images/running-figure.jpg
+order: 690

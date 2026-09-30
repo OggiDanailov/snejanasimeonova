@@ -1,0 +1,9 @@
+title:
+  en: "Figure"
+  bg: "Фигура"
+category: small
+material:
+  en: "bronze"
+  bg: "бронз"
+image: ./images/figure.jpg
+order: 220

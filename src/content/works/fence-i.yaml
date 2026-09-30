@@ -1,0 +1,9 @@
+title:
+  en: "Fence I"
+  bg: "Ограда I"
+category: small
+material:
+  en: "marble"
+  bg: "мрамор"
+image: ./images/fence-i.jpg
+order: 160

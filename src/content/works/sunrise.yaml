@@ -1,0 +1,9 @@
+title:
+  en: "Sunrise"
+  bg: "Изгрев"
+category: small
+material:
+  en: "marble"
+  bg: "мрамор"
+image: ./images/sunrise.jpg
+order: 800

@@ -1,0 +1,14 @@
+title:
+  en: "Figure"
+  bg: "Фигура"
+category: monumental
+material:
+  en: "marble"
+  bg: "мрамор"
+dimensions: "200 × 120 × 40 cm"
+year: 2012
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/figure-2012.jpg
+order: 110

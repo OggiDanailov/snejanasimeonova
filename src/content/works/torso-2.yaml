@@ -1,0 +1,13 @@
+title:
+  en: "Torso"
+  bg: "Торс"
+category: small
+material:
+  en: "bronze"
+  bg: "бронз"
+dimensions: "100 × 60 × 45 cm"
+location:
+  en: "Belgium"
+  bg: "Белгия"
+image: ./images/torso-2.jpg
+order: 870

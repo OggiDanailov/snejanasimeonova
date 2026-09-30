@@ -1,0 +1,14 @@
+title:
+  en: "Figure"
+  bg: "Фигура"
+category: monumental
+material:
+  en: "wood"
+  bg: "дърво"
+dimensions: "200 × 60 × 60 cm"
+year: 2014
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/figure-2014.jpg
+order: 120

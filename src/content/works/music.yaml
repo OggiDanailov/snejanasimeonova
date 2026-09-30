@@ -1,0 +1,13 @@
+title:
+  en: "Music"
+  bg: "Музика"
+category: small
+material:
+  en: "marble, bronze"
+  bg: "мрамор, бронз"
+dimensions: "250 × 220 × 60 cm"
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/music.jpg
+order: 490

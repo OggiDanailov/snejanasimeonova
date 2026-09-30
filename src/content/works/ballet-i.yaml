@@ -1,0 +1,9 @@
+title:
+  en: "Ballet I"
+  bg: "Балет I"
+category: small
+material:
+  en: "marble, bronze"
+  bg: "мрамор, бронз"
+image: ./images/ballet-i.jpg
+order: 30

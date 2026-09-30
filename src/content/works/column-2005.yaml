@@ -1,0 +1,14 @@
+title:
+  en: "Column"
+  bg: "Колона"
+category: monumental
+material:
+  en: "limestone"
+  bg: "варовик"
+dimensions: "200 × 55 × 45 cm"
+year: 2005
+location:
+  en: "Bulgaria"
+  bg: "България"
+image: ./images/column-2005.jpg
+order: 50

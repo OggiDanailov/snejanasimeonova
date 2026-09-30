@@ -1,0 +1,14 @@
+title:
+  en: "Forest"
+  bg: "Гора"
+category: monumental
+material:
+  en: "sandstone"
+  bg: "пясъчник"
+dimensions: "200 × 280 × 50 cm"
+year: 1998
+location:
+  en: "Germany"
+  bg: "Германия"
+image: ./images/forest-1998.jpg
+order: 140

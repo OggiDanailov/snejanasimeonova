@@ -1,0 +1,10 @@
+title:
+  en: "Muse"
+  bg: "Муза"
+category: small
+material:
+  en: "marble"
+  bg: "мрамор"
+dimensions: "60 × 15 × 12 cm"
+image: ./images/muse.jpg
+order: 480

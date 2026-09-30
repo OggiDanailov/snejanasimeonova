@@ -1,0 +1,13 @@
+title:
+  en: "Column II"
+  bg: "Колона II"
+category: monumental
+material:
+  en: "marble"
+  bg: "мрамор"
+dimensions: "280 × 70 × 60 cm"
+location:
+  en: "Spain"
+  bg: "Испания"
+image: ./images/column-ii.jpg
+order: 70

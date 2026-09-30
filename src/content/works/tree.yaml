@@ -1,0 +1,9 @@
+title:
+  en: "Tree"
+  bg: "Дърво"
+category: small
+material:
+  en: "marble"
+  bg: "мрамор"
+image: ./images/tree.jpg
+order: 940

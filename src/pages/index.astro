@@ -1,0 +1,20 @@
+---
+// S3 serves static files only, so pick the language in the browser.
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Snejana Simeonova</title>
+    <meta http-equiv="refresh" content="0; url=/en/" />
+    <link rel="alternate" hreflang="en" href="/en/" />
+    <link rel="alternate" hreflang="bg" href="/bg/" />
+    <script is:inline>
+      location.replace(navigator.language?.toLowerCase().startsWith('bg') ? '/bg/' : '/en/');
+    </script>
+  </head>
+  <body>
+    <a href="/en/">English</a> · <a href="/bg/">Български</a>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+title:
+  en: "Nature"
+  bg: "Природа"
+category: monumental
+material:
+  en: "sandstone"
+  bg: "пясъчник"
+dimensions: "160 × 110 × 90 cm"
+year: 2008
+location:
+  en: "Australia"
+  bg: "Австралия"
+image: ./images/nature-2008.jpg
+order: 210

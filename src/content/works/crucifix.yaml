@@ -1,0 +1,10 @@
+title:
+  en: "Crucifix"
+  bg: "Разпятие"
+category: small
+material:
+  en: "bronze, granite"
+  bg: "бронз, гранит"
+dimensions: "65 × 40 × 25 cm"
+image: ./images/crucifix.jpg
+order: 130

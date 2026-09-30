@@ -1,0 +1,11 @@
+title:
+  en: "Figure I"
+  bg: "Фигура I"
+category: small
+material:
+  en: "wood"
+  bg: "дърво"
+dimensions: "80 × 35 × 30 cm"
+year: 2013
+image: ./images/figure-i-2013.jpg
+order: 270

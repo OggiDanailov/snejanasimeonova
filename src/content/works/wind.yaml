@@ -1,0 +1,9 @@
+title:
+  en: "Wind"
+  bg: "Вятър"
+category: small
+material:
+  en: "marble"
+  bg: "мрамор"
+image: ./images/wind.jpg
+order: 1040

@@ -1,0 +1,9 @@
+title:
+  en: "Tower of fear"
+  bg: "Кула на страха"
+category: small
+material:
+  en: "bronze, stone"
+  bg: "бронз, камък"
+image: ./images/tower-of-fear.jpg
+order: 880

@@ -1,0 +1,9 @@
+title:
+  en: "Crowd"
+  bg: "Тълпа"
+category: small
+material:
+  en: "bronze"
+  bg: "бронз"
+image: ./images/crowd.jpg
+order: 120
