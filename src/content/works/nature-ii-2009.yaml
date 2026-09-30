@@ -1,14 +1,15 @@
+image: ../../assets/works/nature-ii-2009.jpg
+rotate: "270"
 title:
-  en: "Nature II"
-  bg: "Природа II"
+  en: Nature II
+  bg: Природа II
 category: monumental
 material:
-  en: "sandstone"
-  bg: "пясъчник"
-dimensions: "250 × 65 × 70 cm"
+  en: sandstone
+  bg: пясъчник
+dimensions: 250 × 65 × 70 cm
 year: 2009
 location:
-  en: "Germany"
-  bg: "Германия"
-image: ../../assets/works/nature-ii-2009.jpg
+  en: Germany
+  bg: Германия
 order: 240
