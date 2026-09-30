@@ -9,5 +9,5 @@ year: 2001
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/window-2001.jpg
+image: ../../assets/works/window-2001.jpg
 order: 460

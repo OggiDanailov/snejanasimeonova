@@ -10,5 +10,5 @@ year: 2014
 location:
   en: "Romania"
   bg: "Румъния"
-image: ./images/zipper-2014.jpg
+image: ../../assets/works/zipper-2014.jpg
 order: 480

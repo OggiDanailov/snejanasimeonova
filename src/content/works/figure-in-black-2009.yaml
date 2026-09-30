@@ -10,5 +10,5 @@ year: 2009
 location:
   en: "Netherlands"
   bg: "Нидерландия"
-image: ./images/figure-in-black-2009.jpg
+image: ../../assets/works/figure-in-black-2009.jpg
 order: 130

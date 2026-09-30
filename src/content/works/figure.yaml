@@ -5,5 +5,5 @@ category: small
 material:
   en: "bronze"
   bg: "бронз"
-image: ./images/figure.jpg
+image: ../../assets/works/figure.jpg
 order: 220

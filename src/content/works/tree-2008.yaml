@@ -10,5 +10,5 @@ year: 2008
 location:
   en: "Belgium"
   bg: "Белгия"
-image: ./images/tree-2008.jpg
+image: ../../assets/works/tree-2008.jpg
 order: 430

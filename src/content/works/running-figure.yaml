@@ -9,5 +9,5 @@ dimensions: "120 × 50 × 50 cm"
 location:
   en: "Belgium"
   bg: "Белгия"
-image: ./images/running-figure.jpg
+image: ../../assets/works/running-figure.jpg
 order: 690

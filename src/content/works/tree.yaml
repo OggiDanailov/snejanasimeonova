@@ -5,5 +5,5 @@ category: small
 material:
   en: "marble"
   bg: "мрамор"
-image: ./images/tree.jpg
+image: ../../assets/works/tree.jpg
 order: 940

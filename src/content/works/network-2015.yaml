@@ -10,5 +10,5 @@ year: 2015
 location:
   en: "Spain"
   bg: "Испания"
-image: ./images/network-2015.jpg
+image: ../../assets/works/network-2015.jpg
 order: 270

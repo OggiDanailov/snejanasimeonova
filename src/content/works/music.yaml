@@ -9,5 +9,5 @@ dimensions: "250 × 220 × 60 cm"
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/music.jpg
+image: ../../assets/works/music.jpg
 order: 490

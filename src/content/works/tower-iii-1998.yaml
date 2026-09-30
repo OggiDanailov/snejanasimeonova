@@ -10,5 +10,5 @@ year: 1998
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/tower-iii-1998.jpg
+image: ../../assets/works/tower-iii-1998.jpg
 order: 350

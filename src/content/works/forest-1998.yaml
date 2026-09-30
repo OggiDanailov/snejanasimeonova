@@ -10,5 +10,5 @@ year: 1998
 location:
   en: "Germany"
   bg: "Германия"
-image: ./images/forest-1998.jpg
+image: ../../assets/works/forest-1998.jpg
 order: 140

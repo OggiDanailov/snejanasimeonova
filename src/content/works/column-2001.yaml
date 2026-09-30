@@ -10,5 +10,5 @@ year: 2001
 location:
   en: "Spain"
   bg: "Испания"
-image: ./images/column-2001.jpg
+image: ../../assets/works/column-2001.jpg
 order: 40

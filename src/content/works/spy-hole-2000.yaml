@@ -10,5 +10,5 @@ year: 2000
 location:
   en: "Belgium"
   bg: "Белгия"
-image: ./images/spy-hole-2000.jpg
+image: ../../assets/works/spy-hole-2000.jpg
 order: 280

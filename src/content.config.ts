@@ -2,8 +2,13 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
-// Text shown to visitors is stored in both languages side by side.
-const bilingual = z.object({ en: z.string(), bg: z.string() });
+// Text shown to visitors is stored in both languages side by side. Editors may
+// fill in only one language; the other then falls back to it rather than
+// failing the build.
+const bilingual = z
+  .object({ en: z.string().optional(), bg: z.string().optional() })
+  .refine((v) => v.en || v.bg, { message: 'Fill in at least one language' })
+  .transform((v) => ({ en: (v.en || v.bg)!, bg: (v.bg || v.en)! }));
 
 export const CATEGORIES = ['monumental', 'small', 'media'] as const;
 export type Category = (typeof CATEGORIES)[number];

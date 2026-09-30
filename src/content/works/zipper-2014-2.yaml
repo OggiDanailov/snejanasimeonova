@@ -10,5 +10,5 @@ year: 2014
 location:
   en: "Hoyerswerda, Germany"
   bg: "Хойерсверда, Германия"
-image: ./images/zipper-2014-2.jpg
+image: ../../assets/works/zipper-2014-2.jpg
 order: 490

@@ -10,5 +10,5 @@ year: 2003
 location:
   en: "Belgium"
   bg: "Белгия"
-image: ./images/crowd-2003.jpg
+image: ../../assets/works/crowd-2003.jpg
 order: 80

@@ -10,5 +10,5 @@ year: 2014
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/figure-2014.jpg
+image: ../../assets/works/figure-2014.jpg
 order: 120

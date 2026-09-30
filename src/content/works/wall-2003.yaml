@@ -10,5 +10,5 @@ year: 2003
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/wall-2003.jpg
+image: ../../assets/works/wall-2003.jpg
 order: 440

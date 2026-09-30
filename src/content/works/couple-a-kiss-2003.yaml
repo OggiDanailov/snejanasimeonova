@@ -7,5 +7,5 @@ material:
   bg: "бронз"
 dimensions: "40 × 55 × 35 cm"
 year: 2003
-image: ./images/couple-a-kiss-2003.jpg
+image: ../../assets/works/couple-a-kiss-2003.jpg
 order: 100

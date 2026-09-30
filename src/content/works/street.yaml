@@ -5,5 +5,5 @@ category: small
 material:
   en: "bronze"
   bg: "бронз"
-image: ./images/street.jpg
+image: ../../assets/works/street.jpg
 order: 790

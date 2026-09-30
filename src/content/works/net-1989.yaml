@@ -10,5 +10,5 @@ year: 1989
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/net-1989.jpg
+image: ../../assets/works/net-1989.jpg
 order: 250

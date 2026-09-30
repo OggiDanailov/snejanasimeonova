@@ -10,5 +10,5 @@ year: 2013
 location:
   en: "China"
   bg: "Китай"
-image: ./images/music-i-2013.jpg
+image: ../../assets/works/music-i-2013.jpg
 order: 190

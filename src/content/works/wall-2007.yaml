@@ -10,5 +10,5 @@ year: 2007
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/wall-2007.jpg
+image: ../../assets/works/wall-2007.jpg
 order: 450

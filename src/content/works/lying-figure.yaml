@@ -5,5 +5,5 @@ category: small
 material:
   en: "bronze"
   bg: "бронз"
-image: ./images/lying-figure.jpg
+image: ../../assets/works/lying-figure.jpg
 order: 450

@@ -5,5 +5,5 @@ category: small
 material:
   en: "marble"
   bg: "мрамор"
-image: ./images/sunrise.jpg
+image: ../../assets/works/sunrise.jpg
 order: 800

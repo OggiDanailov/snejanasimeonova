@@ -5,5 +5,5 @@ category: small
 material:
   en: "marble"
   bg: "мрамор"
-image: ./images/figure-2.jpg
+image: ../../assets/works/figure-2.jpg
 order: 230

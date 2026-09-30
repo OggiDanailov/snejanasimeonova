@@ -5,5 +5,5 @@ category: small
 material:
   en: "bronze, stone"
   bg: "бронз, камък"
-image: ./images/tower-of-fear.jpg
+image: ../../assets/works/tower-of-fear.jpg
 order: 880

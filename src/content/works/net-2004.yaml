@@ -10,5 +10,5 @@ year: 2004
 location:
   en: "Belgium"
   bg: "Белгия"
-image: ./images/net-2004.jpg
+image: ../../assets/works/net-2004.jpg
 order: 260

@@ -5,5 +5,5 @@ category: small
 material:
   en: "marble, bronze"
   bg: "мрамор, бронз"
-image: ./images/ballet-i.jpg
+image: ../../assets/works/ballet-i.jpg
 order: 30

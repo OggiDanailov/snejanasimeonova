@@ -5,5 +5,5 @@ category: small
 material:
   en: "bronze"
   bg: "бронз"
-image: ./images/towers-of-fear.jpg
+image: ../../assets/works/towers-of-fear.jpg
 order: 930

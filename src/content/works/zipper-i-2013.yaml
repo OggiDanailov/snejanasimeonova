@@ -10,5 +10,5 @@ year: 2013
 location:
   en: "France"
   bg: "Франция"
-image: ./images/zipper-i-2013.jpg
+image: ../../assets/works/zipper-i-2013.jpg
 order: 500

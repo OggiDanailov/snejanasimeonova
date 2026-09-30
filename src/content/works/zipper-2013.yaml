@@ -6,5 +6,5 @@ year: 2013
 location:
   en: "Ilindentsi, Bulgaria"
   bg: "Илинденци, България"
-image: ./images/zipper-2013.jpg
+image: ../../assets/works/zipper-2013.jpg
 order: 1060

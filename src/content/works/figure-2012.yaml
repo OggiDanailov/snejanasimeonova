@@ -10,5 +10,5 @@ year: 2012
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/figure-2012.jpg
+image: ../../assets/works/figure-2012.jpg
 order: 110

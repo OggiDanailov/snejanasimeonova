@@ -10,5 +10,5 @@ year: 2009
 location:
   en: "Germany"
   bg: "Германия"
-image: ./images/nature-2009.jpg
+image: ../../assets/works/nature-2009.jpg
 order: 230

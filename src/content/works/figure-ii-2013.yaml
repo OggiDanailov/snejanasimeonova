@@ -7,5 +7,5 @@ material:
   bg: "дърво"
 dimensions: "80 × 25 × 25 cm"
 year: 2013
-image: ./images/figure-ii-2013.jpg
+image: ../../assets/works/figure-ii-2013.jpg
 order: 310

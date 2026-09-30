@@ -2,5 +2,5 @@ title:
   en: "Hey"
   bg: "Хей"
 category: media
-image: ./images/hey.jpg
+image: ../../assets/works/hey.jpg
 order: 100

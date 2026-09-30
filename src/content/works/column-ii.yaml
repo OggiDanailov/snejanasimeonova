@@ -9,5 +9,5 @@ dimensions: "280 × 70 × 60 cm"
 location:
   en: "Spain"
   bg: "Испания"
-image: ./images/column-ii.jpg
+image: ../../assets/works/column-ii.jpg
 order: 70

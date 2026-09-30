@@ -9,5 +9,5 @@ dimensions: "100 × 60 × 45 cm"
 location:
   en: "Belgium"
   bg: "Белгия"
-image: ./images/torso-2.jpg
+image: ../../assets/works/torso-2.jpg
 order: 870

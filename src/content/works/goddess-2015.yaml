@@ -10,5 +10,5 @@ year: 2015
 location:
   en: "China"
   bg: "Китай"
-image: ./images/goddess-2015.jpg
+image: ../../assets/works/goddess-2015.jpg
 order: 160

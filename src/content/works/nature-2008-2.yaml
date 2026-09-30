@@ -10,5 +10,5 @@ year: 2008
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/nature-2008-2.jpg
+image: ../../assets/works/nature-2008-2.jpg
 order: 220

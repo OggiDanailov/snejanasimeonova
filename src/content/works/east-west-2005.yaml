@@ -10,5 +10,5 @@ year: 2005
 location:
   en: "Israel"
   bg: "Израел"
-image: ./images/east-west-2005.jpg
+image: ../../assets/works/east-west-2005.jpg
 order: 90

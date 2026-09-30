@@ -4,7 +4,7 @@
 //   node scripts/migrate-images.mjs             write images + YAML entries
 //
 // Each legacy image becomes:
-//   src/content/works/images/<slug>.jpg   (EXIF-rotated, max 2400px, JPEG)
+//   src/assets/works/<slug>.jpg          (EXIF-rotated, max 2400px, JPEG)
 //   src/content/works/<slug>.yaml         (bilingual metadata parsed from the filename)
 //
 // Titles that can't be parsed or translated automatically are listed in
@@ -21,7 +21,7 @@ import { TITLES, TITLE_OVERRIDES } from './migration-titles.mjs';
 const ROOT = path.resolve(import.meta.dirname, '..');
 const LEGACY = path.join(ROOT, 'legacy/images');
 const OUT_DIR = path.join(ROOT, 'src/content/works');
-const OUT_IMAGES = path.join(OUT_DIR, 'images');
+const OUT_IMAGES = path.join(ROOT, 'src/assets/works');
 const MAX_SIZE = 2400;
 const DRY_RUN = process.argv.includes('--dry-run');
 
@@ -200,7 +200,7 @@ function toYaml(entry) {
   if (entry.dimensions) lines.push(`dimensions: ${yamlString(entry.dimensions)}`);
   if (entry.year) lines.push(`year: ${entry.year}`);
   if (entry.place) lines.push(`location:`, `  en: ${yamlString(entry.place.en)}`, `  bg: ${yamlString(entry.place.bg)}`);
-  lines.push(`image: ./images/${entry.slug}.jpg`, `order: ${entry.order}`);
+  lines.push(`image: ../../assets/works/${entry.slug}.jpg`, `order: ${entry.order}`);
   return lines.join('\n') + '\n';
 }
 

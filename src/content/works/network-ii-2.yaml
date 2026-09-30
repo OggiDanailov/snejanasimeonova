@@ -6,5 +6,5 @@ material:
   en: "bronze"
   bg: "бронз"
 dimensions: "40 × 25 × 28 cm"
-image: ./images/network-ii-2.jpg
+image: ../../assets/works/network-ii-2.jpg
 order: 540

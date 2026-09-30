@@ -1,0 +1,164 @@
+# Pages CMS configuration (https://pagescms.org/docs/configuration/)
+# Defines the editing forms at app.pagescms.org for this repository.
+
+media:
+  # Content files live two folders deep (src/content/<collection>/), so images
+  # are referenced relative to them. Astro resizes uploads when it builds.
+  input: src/assets/works
+  output: ../../assets/works
+  rename: safe
+  categories: [image]
+
+components:
+  bilingual:
+    type: object
+    fields:
+      - name: en
+        label: English
+        type: string
+      - name: bg
+        label: Български
+        type: string
+
+content:
+  - name: works
+    label: Works / Творби
+    type: collection
+    path: src/content/works
+    format: yaml
+    filename: '{title.en}-{year}.yaml'
+    view:
+      primary: title.en
+      fields: [image, title.en, category, year]
+      sort: [order, title.en, year]
+      search: [title.en, title.bg]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: image
+        label: Photo / Снимка
+        type: image
+        required: true
+      - name: title
+        label: Title / Заглавие
+        component: bilingual
+        required: true
+      - name: category
+        label: Section / Раздел
+        type: select
+        required: true
+        default: small
+        options:
+          values:
+            - value: monumental
+              label: Monumental / Монументална пластика
+            - value: small
+              label: Small sculpture / Малка пластика
+            - value: media
+              label: Mixed media / Смесена техника
+      - name: material
+        label: Material / Материал
+        description: 'e.g. marble / мрамор'
+        component: bilingual
+      - name: dimensions
+        label: Size / Размери
+        description: 'e.g. 120 × 50 × 40 cm'
+        type: string
+      - name: year
+        label: Year / Година
+        type: number
+      - name: location
+        label: Place / Място
+        description: 'Where the work is or was made, e.g. Belgium / Белгия'
+        component: bilingual
+      - name: order
+        label: Position / Позиция
+        description: 'Lower numbers are shown first in the section. / По-малките числа се показват първи.'
+        type: number
+        default: 1000
+
+  - name: bio-en
+    label: Biography (English)
+    type: file
+    path: src/content/bio/en.md
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Page title
+        type: string
+        required: true
+      - name: body
+        label: Text
+        type: rich-text
+
+  - name: bio-bg
+    label: Биография (български)
+    type: file
+    path: src/content/bio/bg.md
+    format: yaml-frontmatter
+    fields:
+      - name: title
+        label: Заглавие на страницата
+        type: string
+        required: true
+      - name: body
+        label: Текст
+        type: rich-text
+
+  - name: settings
+    label: Site settings / Настройки
+    type: file
+    path: src/content/site/settings.yaml
+    format: yaml
+    fields:
+      - name: tagline
+        label: Tagline (home page) / Подзаглавие
+        component: bilingual
+        required: true
+      - name: intro
+        label: Introduction (home page) / Въведение
+        type: object
+        required: true
+        fields:
+          - name: en
+            label: English
+            type: text
+          - name: bg
+            label: Български
+            type: text
+      - name: heroImage
+        label: Home page photo / Снимка на началната страница
+        type: image
+        required: true
+      - name: covers
+        label: Section cover photos / Корици на разделите
+        type: object
+        fields:
+          - name: monumental
+            label: Monumental / Монументална пластика
+            type: image
+            required: true
+          - name: small
+            label: Small sculpture / Малка пластика
+            type: image
+            required: true
+          - name: media
+            label: Mixed media / Смесена техника
+            type: image
+            required: true
+      - name: email
+        label: Email / Имейл
+        type: string
+        required: true
+      - name: phone
+        label: Phone / Телефон
+        type: string
+      - name: facebook
+        label: Facebook page link / Връзка към Facebook
+        description: 'Full address, e.g. https://www.facebook.com/… (leave empty to hide)'
+        type: string
+      - name: location
+        label: Based in / Живее и работи в
+        component: bilingual
+        required: true

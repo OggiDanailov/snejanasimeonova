@@ -5,5 +5,5 @@ category: small
 location:
   en: "Germany"
   bg: "Германия"
-image: ./images/two-figures.jpg
+image: ../../assets/works/two-figures.jpg
 order: 970

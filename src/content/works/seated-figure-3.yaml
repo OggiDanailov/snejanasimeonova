@@ -9,5 +9,5 @@ dimensions: "85 × 70 × 50 cm"
 location:
   en: "Belgium"
   bg: "Белгия"
-image: ./images/seated-figure-3.jpg
+image: ../../assets/works/seated-figure-3.jpg
 order: 760

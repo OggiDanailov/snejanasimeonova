@@ -10,5 +10,5 @@ year: 2007
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/forest-2007.jpg
+image: ../../assets/works/forest-2007.jpg
 order: 150

@@ -10,5 +10,5 @@ year: 2004
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/tower-2004.jpg
+image: ../../assets/works/tower-2004.jpg
 order: 320

@@ -6,5 +6,5 @@ material:
   en: "marble"
   bg: "мрамор"
 dimensions: "60 × 20 × 20 cm"
-image: ./images/pandora-s-box.jpg
+image: ../../assets/works/pandora-s-box.jpg
 order: 650

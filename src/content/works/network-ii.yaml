@@ -5,5 +5,5 @@ category: small
 material:
   en: "marble"
   bg: "мрамор"
-image: ./images/network-ii.jpg
+image: ../../assets/works/network-ii.jpg
 order: 530

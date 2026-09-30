@@ -5,5 +5,5 @@ category: small
 material:
   en: "bronze"
   bg: "бронз"
-image: ./images/sailboat.jpg
+image: ../../assets/works/sailboat.jpg
 order: 720

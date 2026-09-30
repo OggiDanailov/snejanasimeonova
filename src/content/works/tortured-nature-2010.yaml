@@ -10,5 +10,5 @@ year: 2010
 location:
   en: "New Zealand"
   bg: "Нова Зеландия"
-image: ./images/tortured-nature-2010.jpg
+image: ../../assets/works/tortured-nature-2010.jpg
 order: 310

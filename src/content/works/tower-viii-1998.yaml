@@ -10,5 +10,5 @@ year: 1998
 location:
   en: "Belgium"
   bg: "Белгия"
-image: ./images/tower-viii-1998.jpg
+image: ../../assets/works/tower-viii-1998.jpg
 order: 400

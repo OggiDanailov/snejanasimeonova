@@ -5,5 +5,5 @@ category: small
 material:
   en: "marble"
   bg: "мрамор"
-image: ./images/fence-ii.jpg
+image: ../../assets/works/fence-ii.jpg
 order: 170

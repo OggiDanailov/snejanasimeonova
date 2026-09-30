@@ -7,5 +7,5 @@ year: 2003
 location:
   en: "Belgium"
   bg: "Белгия"
-image: ./images/big-white-woman-2003.jpg
+image: ../../assets/works/big-white-woman-2003.jpg
 order: 10

@@ -10,5 +10,5 @@ year: 2005
 location:
   en: "Bulgaria"
   bg: "България"
-image: ./images/column-2005.jpg
+image: ../../assets/works/column-2005.jpg
 order: 50

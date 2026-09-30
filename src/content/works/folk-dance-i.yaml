@@ -5,5 +5,5 @@ category: small
 material:
   en: "bronze"
   bg: "бронз"
-image: ./images/folk-dance-i.jpg
+image: ../../assets/works/folk-dance-i.jpg
 order: 360

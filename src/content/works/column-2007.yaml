@@ -10,5 +10,5 @@ year: 2007
 location:
   en: "Turkey"
   bg: "Турция"
-image: ./images/column-2007.jpg
+image: ../../assets/works/column-2007.jpg
 order: 60
