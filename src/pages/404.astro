@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import { UI } from '../i18n';
+
+const t = UI.en;
+---
+
+<Base lang="en" title={t.notFound}>
+  <div class="container page-header">
+    <h1>{t.notFound}</h1>
+    <p>{t.notFoundText}</p>
+    <p>
+      <a class="button" href="/en/">{t.backHome}</a>
+      <a class="button button--ghost" href="/bg/">{UI.bg.backHome}</a>
+    </p>
+  </div>
+</Base>

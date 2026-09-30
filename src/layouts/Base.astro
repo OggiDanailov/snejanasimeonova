@@ -1,16 +1,31 @@
 ---
-import { LOCALES, UI, type Locale } from '../i18n';
+import '../styles/global.css';
+import { LOCALES, UI, getSettings, type Locale } from '../i18n';
 
 interface Props {
   lang: Locale;
   title?: string;
+  description?: string;
 }
 
-const { lang, title } = Astro.props;
+const { lang, title, description } = Astro.props;
 const t = UI[lang];
+const settings = await getSettings();
+
+const path = Astro.url.pathname;
 // Same page in the other language: swap the leading /en/ or /bg/.
 const otherLang = LOCALES.find((l) => l !== lang)!;
-const otherPath = Astro.url.pathname.replace(/^\/(en|bg)/, `/${otherLang}`);
+const otherPath = /^\/(en|bg)(\/|$)/.test(path) ? path.replace(/^\/(en|bg)/, `/${otherLang}`) : `/${otherLang}/`;
+
+const links = [
+  { href: `/${lang}/monumental/`, label: t.monumental },
+  { href: `/${lang}/small/`, label: t.small },
+  { href: `/${lang}/media/`, label: t.media },
+  { href: `/${lang}/biography/`, label: t.biography },
+  { href: `/${lang}/contact/`, label: t.contact },
+];
+const isCurrent = (href: string) => path.startsWith(href);
+const year = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -18,20 +33,285 @@ const otherPath = Astro.url.pathname.replace(/^\/(en|bg)/, `/${otherLang}`);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title ? `${title} · ${t.siteTitle}` : t.siteTitle}</title>
+    <title>{title ? `${title} · ${t.siteTitle}` : `${t.siteTitle} · ${settings.tagline[lang]}`}</title>
+    <meta name="description" content={description ?? settings.intro[lang]} />
+    {LOCALES.map((l) => <link rel="alternate" hreflang={l} href={path.replace(/^\/(en|bg)/, `/${l}`)} />)}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
-    <header>
-      <a href={`/${lang}/`}>{t.siteTitle}</a>
-      <nav>
-        <a href={`/${lang}/media/`}>{t.media}</a>
-        <a href={`/${lang}/small/`}>{t.small}</a>
-        <a href={`/${lang}/monumental/`}>{t.monumental}</a>
-        <a href={otherPath} hreflang={otherLang}>{otherLang.toUpperCase()}</a>
-      </nav>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href={`/${lang}/`}>{t.siteTitle}</a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__bars" aria-hidden="true"></span>
+          <span class="menu-toggle__label">{t.menu}</span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label={t.menu}>
+          <ul>
+            {
+              links.map(({ href, label }) => (
+                <li>
+                  <a href={href} aria-current={isCurrent(href) ? 'page' : undefined}>
+                    {label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+          <a class="lang-switch" href={otherPath} hreflang={otherLang} lang={otherLang}>
+            <span aria-hidden="true">{otherLang === 'bg' ? 'БГ' : 'EN'}</span>
+            <span class="visually-hidden">{t.otherLanguage}</span>
+          </a>
+        </nav>
+      </div>
     </header>
+
     <main>
       <slot />
     </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© {year} {t.siteTitle}</p>
+        <p>
+          <a href={`mailto:${settings.email}`}>{settings.email}</a>
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle')!;
+      const header = document.querySelector('.site-header')!;
+      const setOpen = (open: boolean) => {
+        toggle.setAttribute('aria-expanded', String(open));
+        header.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+      };
+      toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+      document.addEventListener('keydown', (e) => e.key === 'Escape' && setOpen(false));
+      matchMedia('(min-width: 60rem)').addEventListener('change', () => setOpen(false));
+    </script>
   </body>
 </html>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: saturate(1.4) blur(12px);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .site-header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: var(--header-h);
+  }
+
+  .brand {
+    font-family: var(--font-serif);
+    font-size: 1.55rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .brand:hover {
+    color: inherit;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+  }
+
+  .site-nav ul {
+    display: flex;
+    gap: 1.6rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .site-nav ul a {
+    position: relative;
+    display: block;
+    padding-block: 0.4rem;
+    font-size: 0.93rem;
+    text-decoration: none;
+    color: var(--muted);
+    transition: color 0.2s;
+  }
+
+  .site-nav ul a:hover,
+  .site-nav ul a[aria-current='page'] {
+    color: var(--text);
+  }
+
+  .site-nav ul a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s;
+  }
+
+  .site-nav ul a:hover::after,
+  .site-nav ul a[aria-current='page']::after {
+    transform: scaleX(1);
+  }
+
+  .lang-switch {
+    display: inline-grid;
+    place-items: center;
+    min-width: 2.6rem;
+    height: 2rem;
+    padding-inline: 0.6rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .lang-switch:hover {
+    border-color: var(--accent);
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Phones and tablets: navigation becomes a full-screen panel. */
+  @media (max-width: 59.99rem) {
+    .menu-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.5rem 0;
+      border: 0;
+      background: none;
+      color: inherit;
+      font: inherit;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .menu-toggle__bars,
+    .menu-toggle__bars::before,
+    .menu-toggle__bars::after {
+      display: block;
+      width: 1.3rem;
+      height: 1.5px;
+      background: currentColor;
+      transition: transform 0.25s, opacity 0.25s;
+    }
+
+    .menu-toggle__bars {
+      position: relative;
+    }
+
+    .menu-toggle__bars::before,
+    .menu-toggle__bars::after {
+      content: '';
+      position: absolute;
+    }
+
+    .menu-toggle__bars::before {
+      top: -6px;
+    }
+
+    .menu-toggle__bars::after {
+      top: 6px;
+    }
+
+    .is-open .menu-toggle__bars {
+      background: transparent;
+    }
+
+    .is-open .menu-toggle__bars::before {
+      transform: translateY(6px) rotate(45deg);
+    }
+
+    .is-open .menu-toggle__bars::after {
+      transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .site-nav {
+      position: fixed;
+      inset: var(--header-h) 0 0;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2rem var(--gutter);
+      background: var(--bg);
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-0.5rem);
+      transition: opacity 0.2s, transform 0.2s, visibility 0.2s;
+      overflow-y: auto;
+    }
+
+    .is-open .site-nav {
+      visibility: visible;
+      opacity: 1;
+      transform: none;
+    }
+
+    .site-nav ul {
+      flex-direction: column;
+      gap: 0.25rem;
+      width: 100%;
+    }
+
+    .site-nav ul a {
+      font-family: var(--font-serif);
+      font-size: 2rem;
+      color: var(--text);
+      padding-block: 0.35rem;
+    }
+
+    .site-nav ul a::after {
+      display: none;
+    }
+
+    .site-nav ul a[aria-current='page'] {
+      color: var(--accent);
+    }
+  }
+
+  .site-footer {
+    margin-top: clamp(4rem, 10vw, 7rem);
+    border-top: 1px solid var(--line);
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+
+  .site-footer__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem 2rem;
+    padding-block: 2rem;
+  }
+
+  .site-footer p {
+    margin: 0;
+  }
+</style>

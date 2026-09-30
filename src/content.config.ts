@@ -5,7 +5,8 @@ import { z } from 'astro/zod';
 // Text shown to visitors is stored in both languages side by side.
 const bilingual = z.object({ en: z.string(), bg: z.string() });
 
-export const CATEGORIES = ['media', 'small', 'monumental'] as const;
+export const CATEGORIES = ['monumental', 'small', 'media'] as const;
+export type Category = (typeof CATEGORIES)[number];
 
 const works = defineCollection({
   loader: glob({ pattern: '*.yaml', base: './src/content/works' }),
@@ -23,4 +24,26 @@ const works = defineCollection({
     }),
 });
 
-export const collections = { works };
+// One Markdown file per language: bio/en.md, bio/bg.md
+const bio = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/bio' }),
+  schema: z.object({ title: z.string() }),
+});
+
+// Site-wide texts, contact details and the photos used on the home page.
+const site = defineCollection({
+  loader: glob({ pattern: 'settings.yaml', base: './src/content/site' }),
+  schema: ({ image }) =>
+    z.object({
+      tagline: bilingual,
+      intro: bilingual,
+      heroImage: image(),
+      covers: z.object({ monumental: image(), small: image(), media: image() }),
+      email: z.string(),
+      phone: z.string().optional(),
+      facebook: z.string().optional(),
+      location: bilingual,
+    }),
+});
+
+export const collections = { works, bio, site };

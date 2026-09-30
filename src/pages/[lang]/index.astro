@@ -1,12 +1,151 @@
 ---
+import { Image } from 'astro:assets';
+import { CATEGORIES } from '../../content.config';
 import Base from '../../layouts/Base.astro';
-import { LOCALES, type Locale } from '../../i18n';
+import { UI, getSettings, getWorks, localeParams, type Locale } from '../../i18n';
 
-export function getStaticPaths() {
-  return LOCALES.map((lang) => ({ params: { lang } }));
-}
+export const getStaticPaths = localeParams;
 
 const lang = Astro.params.lang as Locale;
+const t = UI[lang];
+const settings = await getSettings();
+const categories = await Promise.all(
+  CATEGORIES.map(async (category) => ({
+    category,
+    count: (await getWorks(category)).length,
+    cover: settings.covers[category],
+  })),
+);
 ---
 
-<Base lang={lang} />
+<Base lang={lang}>
+  <section class="hero container">
+    <div class="hero__text">
+      <p class="eyebrow">{settings.tagline[lang]}</p>
+      <h1>{t.siteTitle}</h1>
+      <p class="hero__intro">{settings.intro[lang]}</p>
+      <div class="hero__actions">
+        <a class="button" href={`/${lang}/monumental/`}>{t.viewWorks}</a>
+        <a class="button button--ghost" href={`/${lang}/biography/`}>{t.biography}</a>
+      </div>
+    </div>
+    <div class="hero__image">
+      <Image
+        src={settings.heroImage}
+        alt=""
+        widths={[600, 900, 1200]}
+        sizes="(min-width: 56rem) 45vw, 100vw"
+        loading="eager"
+        fetchpriority="high"
+      />
+    </div>
+  </section>
+
+  <section class="categories container" aria-labelledby="works-heading">
+    <h2 id="works-heading" class="eyebrow">{t.works}</h2>
+    <ul>
+      {
+        categories.map(({ category, count, cover }) => (
+          <li>
+            <a class="category-card" href={`/${lang}/${category}/`}>
+              <div class="category-card__image">
+                <Image src={cover} alt="" widths={[400, 700]} sizes="(min-width: 48rem) 33vw, 100vw" />
+              </div>
+              <h3>{t[category]}</h3>
+              <p>{t.workCount(count)}</p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
+    padding-block: clamp(2rem, 6vw, 5rem);
+  }
+
+  @media (min-width: 56rem) {
+    .hero {
+      grid-template-columns: 1.1fr 0.9fr;
+    }
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 8vw, 5.75rem);
+    line-height: 0.98;
+  }
+
+  .hero__intro {
+    max-width: 34rem;
+    margin: 1.5rem 0 2rem;
+    font-size: 1.075rem;
+    color: var(--muted);
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .hero__image img {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: cover;
+    border-radius: var(--radius);
+  }
+
+  .categories {
+    padding-top: clamp(2rem, 6vw, 4rem);
+    border-top: 1px solid var(--line);
+  }
+
+  .categories ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: clamp(1.25rem, 3vw, 2.5rem);
+    margin: 1.5rem 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .category-card {
+    display: block;
+    text-decoration: none;
+  }
+
+  .category-card__image {
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-radius: var(--radius);
+    background: var(--accent-soft);
+  }
+
+  .category-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+
+  .category-card:hover img {
+    transform: scale(1.04);
+  }
+
+  .category-card h3 {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .category-card p {
+    margin: 0.15rem 0 0;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+</style>
