@@ -1,8 +1,7 @@
 ---
 title: Biography
 ---
-
-Snejana Simeonova was born in Sofia, Bulgaria. She graduated from the National Academy of Fine Arts in Sofia with an MA in Sculpture.
+Snejana Hristova Simeonova was born in Sofia, Bulgaria. She graduated from the National Academy of Fine Arts in Sofia with an MA in Sculpture.
 
 ## Selected solo exhibitions
 
