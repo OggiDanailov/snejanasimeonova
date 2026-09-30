@@ -1,7 +1,8 @@
+image: ../../assets/works/allegory-ii-2005.jpg
+rotate: "180"
 title:
-  en: "Allegory II"
-  bg: "Алегория II"
+  en: Allegory II
+  bg: Алегория II
 category: small
 year: 2005
-image: ../../assets/works/allegory-ii-2005.jpg
 order: 20
