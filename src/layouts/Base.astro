@@ -101,10 +101,20 @@ const year = new Date().getFullYear();
     position: sticky;
     top: 0;
     z-index: 20;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* The frosted background lives on a pseudo-element: backdrop-filter on the
+     header itself would make it the containing block for the fixed mobile
+     menu, squashing the menu to the header's height. */
+  .site-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
     background: color-mix(in srgb, var(--bg) 88%, transparent);
     backdrop-filter: saturate(1.4) blur(12px);
     -webkit-backdrop-filter: saturate(1.4) blur(12px);
-    border-bottom: 1px solid var(--line);
   }
 
   .site-header__inner {
