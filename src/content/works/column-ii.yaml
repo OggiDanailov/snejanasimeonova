@@ -1,13 +1,14 @@
+image: ../../assets/works/column-ii.jpg
+rotate: "270"
 title:
-  en: "Column II"
-  bg: "Колона II"
+  en: Column II
+  bg: Колона II
 category: monumental
 material:
-  en: "marble"
-  bg: "мрамор"
-dimensions: "280 × 70 × 60 cm"
+  en: marble
+  bg: мрамор
+dimensions: 280 × 70 × 60 cm
 location:
-  en: "Spain"
-  bg: "Испания"
-image: ../../assets/works/column-ii.jpg
+  en: Spain
+  bg: Испания
 order: 70
