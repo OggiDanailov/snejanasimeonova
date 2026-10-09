@@ -71,15 +71,23 @@ jobs:
         env:
           BUCKET: ${{ vars.S3_BUCKET }}
         run: |
+          # The bucket also holds years of S3 access logs (logs/), so never list
+          # or sync the bucket root: sync only the site's own folders, and copy
+          # the top-level files directly.
           # Hashed assets never change, so browsers may cache them for a year;
           # pages must always be re-checked so edits show up straight away.
-          aws s3 sync dist/_astro "s3://$BUCKET/_astro" --delete --no-progress \
-            --cache-control "public, max-age=31536000, immutable"
-          # Never touch logs/: S3 access logs were written into this bucket, and
-          # deleting them creates new log files, so --delete would never finish.
-          aws s3 sync dist "s3://$BUCKET" --delete --no-progress \
-            --exclude "_astro/*" --exclude "logs/*" \
-            --cache-control "public, max-age=0, must-revalidate"
+          IMMUTABLE="public, max-age=31536000, immutable"
+          REVALIDATE="public, max-age=0, must-revalidate"
+
+          aws s3 sync dist/_astro "s3://$BUCKET/_astro" --delete --no-progress --cache-control "$IMMUTABLE"
+
+          for dir in $(cd dist && find . -mindepth 1 -maxdepth 1 -type d ! -name _astro -exec basename {} \;); do
+            aws s3 sync "dist/$dir" "s3://$BUCKET/$dir" --delete --no-progress --cache-control "$REVALIDATE"
+          done
+
+          for file in $(cd dist && find . -maxdepth 1 -type f -exec basename {} \;); do
+            aws s3 cp "dist/$file" "s3://$BUCKET/$file" --no-progress --cache-control "$REVALIDATE"
+          done
 
       - name: Refresh CloudFront
         if: github.ref_name == vars.DEPLOY_BRANCH && vars.CLOUDFRONT_DISTRIBUTION_ID != ''
