@@ -1,9 +1,10 @@
+image: ../../assets/works/network-i.jpg
+rotate: "270"
 title:
-  en: "Network I"
-  bg: "Мрежа I"
+  en: Network I
+  bg: Мрежа I
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
-image: ../../assets/works/network-i.jpg
+  en: marble
+  bg: мрамор
 order: 510
