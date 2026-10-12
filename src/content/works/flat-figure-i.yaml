@@ -1,6 +1,7 @@
-title:
-  en: "Flat figure I"
-  bg: "Плоска фигура I"
-category: small
 image: ../../assets/works/flat-figure-i.jpg
+rotate: "270"
+title:
+  en: Flat figure I
+  bg: Плоска фигура I
+category: small
 order: 340
