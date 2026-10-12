@@ -1,9 +1,10 @@
+image: ../../assets/works/seated-figure.jpg
+rotate: "270"
 title:
-  en: "Seated figure"
-  bg: "Седнала фигура"
+  en: Seated figure
+  bg: Седнала фигура
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
-image: ../../assets/works/seated-figure.jpg
+  en: bronze
+  bg: бронз
 order: 740
