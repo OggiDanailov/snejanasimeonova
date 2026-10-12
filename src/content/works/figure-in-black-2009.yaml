@@ -1,14 +1,15 @@
+image: ../../assets/works/figure-in-black-2009.jpg
+rotate: "270"
 title:
-  en: "Figure in black"
-  bg: "Фигура в черно"
+  en: Figure in black
+  bg: Фигура в черно
 category: monumental
 material:
-  en: "marble"
-  bg: "мрамор"
-dimensions: "80 × 60 × 40 cm"
+  en: marble
+  bg: мрамор
+dimensions: 80 × 60 × 40 cm
 year: 2009
 location:
-  en: "Netherlands"
-  bg: "Нидерландия"
-image: ../../assets/works/figure-in-black-2009.jpg
+  en: Netherlands
+  bg: Нидерландия
 order: 130
