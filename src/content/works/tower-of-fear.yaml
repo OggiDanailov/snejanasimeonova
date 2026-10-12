@@ -1,9 +1,10 @@
+image: ../../assets/works/tower-of-fear.jpg
+rotate: "270"
 title:
-  en: "Tower of fear"
-  bg: "Кула на страха"
+  en: Tower of fear
+  bg: Кула на страха
 category: small
 material:
-  en: "bronze, stone"
-  bg: "бронз, камък"
-image: ../../assets/works/tower-of-fear.jpg
+  en: bronze, stone
+  bg: бронз, камък
 order: 880
