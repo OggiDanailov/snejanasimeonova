@@ -1,4 +1,5 @@
 image: ../../assets/works/column-ii.jpg
+rotate: "180"
 title:
   en: Column II
   bg: Колона II
