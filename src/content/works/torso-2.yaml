@@ -1,13 +1,14 @@
+image: ../../assets/works/torso-2.jpg
+rotate: "270"
 title:
-  en: "Torso"
-  bg: "Торс"
+  en: Torso
+  bg: Торс
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
-dimensions: "100 × 60 × 45 cm"
+  en: bronze
+  bg: бронз
+dimensions: 100 × 60 × 45 cm
 location:
-  en: "Belgium"
-  bg: "Белгия"
-image: ../../assets/works/torso-2.jpg
+  en: Belgium
+  bg: Белгия
 order: 870
