@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import { CATEGORIES } from '../../content.config';
 import Base from '../../layouts/Base.astro';
 import { UI, getSettings, getWorks, localeParams, type Locale } from '../../i18n';
@@ -12,6 +12,24 @@ const t = UI[lang];
 const settings = await getSettings();
 const heroRotate = await rotationFor(settings.heroImage);
 const hero = rotated(settings.heroImage, heroRotate);
+
+// Slideshow: upright photos from both sculpture sections, shown in random
+// order after the hero photo (wide photos would crop badly in the frame).
+const caption = (title: string, year?: number) => (year ? `${title}, ${year}` : title);
+const sculptures = [...(await getWorks('monumental')), ...(await getWorks('small'))];
+const heroWork = sculptures.find((w) => w.data.image.src === settings.heroImage.src);
+const slides = await Promise.all(
+  sculptures
+    .filter((w) => w !== heroWork)
+    .map((w) => ({ work: w, image: rotated(w.data.image, w.data.rotate) }))
+    .filter(({ image }) => image.height >= image.width)
+    .map(async ({ work, image }) => ({
+      src: (await getImage({ src: image, rotate: work.data.rotate, width: Math.min(image.width, 1000), format: 'webp' })).src,
+      caption: caption(work.data.title[lang], work.data.year),
+    })),
+);
+const heroCaption = heroWork ? caption(heroWork.data.title[lang], heroWork.data.year) : '';
+
 const categories = await Promise.all(
   CATEGORIES.map(async (category) => ({
     category,
@@ -33,17 +51,22 @@ const categories = await Promise.all(
         <a class="button button--ghost" href={`/${lang}/biography/`}>{t.biography}</a>
       </div>
     </div>
-    <div class="hero__image">
-      <Image
-        src={hero}
-        rotate={heroRotate}
-        alt=""
-        widths={[600, 900, 1200]}
-        sizes="(min-width: 56rem) 45vw, 100vw"
-        loading="eager"
-        fetchpriority="high"
-      />
-    </div>
+    <figure class="hero__image" data-slides={JSON.stringify(slides)}>
+      <div class="hero__frame">
+        <Image
+          class="hero__slide is-active"
+          src={hero}
+          rotate={heroRotate}
+          alt={heroCaption}
+          widths={[600, 900, 1200]}
+          sizes="(min-width: 56rem) 45vw, 100vw"
+          loading="eager"
+          fetchpriority="high"
+        />
+        <img class="hero__slide" alt="" aria-hidden="true" decoding="async" />
+      </div>
+      {heroCaption && <figcaption class="hero__caption">{heroCaption}</figcaption>}
+    </figure>
   </section>
 
   <section class="categories container" aria-labelledby="works-heading">
@@ -65,6 +88,54 @@ const categories = await Promise.all(
     </ul>
   </section>
 </Base>
+
+<script>
+  // Crossfades the hero photo every 20 seconds through the slides listed in
+  // data-slides. Two <img> layers take turns: the next photo is loaded into
+  // the hidden one and only shown once it's ready.
+  const INTERVAL = 20_000;
+  const figure = document.querySelector<HTMLElement>('.hero__image');
+  const slides: { src: string; caption: string }[] = JSON.parse(figure?.dataset.slides ?? '[]');
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (figure && slides.length && !reduceMotion) {
+    const layers = [...figure.querySelectorAll<HTMLImageElement>('.hero__slide')];
+    const caption = figure.querySelector('.hero__caption');
+    // Shuffle so returning visitors see different works.
+    for (let i = slides.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [slides[i], slides[j]] = [slides[j], slides[i]];
+    }
+    let next = 0;
+    let visible = 0;
+
+    async function advance() {
+      if (document.hidden) return; // don't change photos nobody is looking at
+      const slide = slides[next];
+      next = (next + 1) % slides.length;
+      const incoming = layers[1 - visible];
+      // The hero <img> has a responsive srcset; the other layer uses a plain src.
+      incoming.removeAttribute('srcset');
+      incoming.removeAttribute('sizes');
+      incoming.src = slide.src;
+      try {
+        await incoming.decode();
+      } catch {
+        return; // skip a photo that fails to load
+      }
+      incoming.alt = slide.caption;
+      incoming.removeAttribute('aria-hidden');
+      layers[visible].classList.remove('is-active');
+      layers[visible].alt = '';
+      layers[visible].setAttribute('aria-hidden', 'true');
+      incoming.classList.add('is-active');
+      if (caption) caption.textContent = slide.caption;
+      visible = 1 - visible;
+    }
+
+    setInterval(advance, INTERVAL);
+  }
+</script>
 
 <style>
   .hero {
@@ -99,11 +170,38 @@ const categories = await Promise.all(
     gap: 0.75rem;
   }
 
-  .hero__image img {
+  .hero__image {
+    margin: 0;
+  }
+
+  .hero__frame {
+    position: relative;
     width: 100%;
+    aspect-ratio: 4 / 5;
     max-height: 80vh;
-    object-fit: cover;
+    overflow: hidden;
     border-radius: var(--radius);
+    background: var(--accent-soft);
+  }
+
+  .hero__slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+  }
+
+  .hero__slide.is-active {
+    opacity: 1;
+  }
+
+  .hero__caption {
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--muted);
   }
 
   .categories {
