@@ -67,9 +67,9 @@ content:
         options:
           values:
             - value: monumental
-              label: Monumental / Монументална пластика
+              label: Large-scale sculpture / Монументална пластика
             - value: small
-              label: Small sculpture / Малка пластика
+              label: Small-scale sculpture / Малка пластика
             - value: media
               label: Mixed media / Смесена техника
       - name: material
@@ -151,11 +151,11 @@ content:
         type: object
         fields:
           - name: monumental
-            label: Monumental / Монументална пластика
+            label: Large-scale sculpture / Монументална пластика
             type: image
             required: true
           - name: small
-            label: Small sculpture / Малка пластика
+            label: Small-scale sculpture / Малка пластика
             type: image
             required: true
           - name: media

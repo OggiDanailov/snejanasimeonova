@@ -8,8 +8,8 @@ export const UI = {
   en: {
     siteTitle: 'Snejana Simeonova',
     home: 'Home',
-    monumental: 'Monumental',
-    small: 'Small sculpture',
+    monumental: 'Large-scale sculpture',
+    small: 'Small-scale sculpture',
     media: 'Mixed media',
     biography: 'Biography',
     contact: 'Contact',

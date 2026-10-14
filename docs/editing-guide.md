@@ -39,7 +39,7 @@
 1. Open **Works / Творби** → **Add an entry**.
 2. **Photo** – upload the picture (straight from a phone is fine; size doesn't matter).
 3. **Title** – fill in English and Bulgarian.
-4. **Section** – Monumental, Small sculpture or Mixed media.
+4. **Section** – Large-scale sculpture, Small-scale sculpture or Mixed media.
 5. Optional: material, size, year, place.
 6. Click **Save**.
 

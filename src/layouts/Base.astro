@@ -91,7 +91,7 @@ const year = new Date().getFullYear();
       };
       toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
       document.addEventListener('keydown', (e) => e.key === 'Escape' && setOpen(false));
-      matchMedia('(min-width: 60rem)').addEventListener('change', () => setOpen(false));
+      matchMedia('(min-width: 64rem)').addEventListener('change', () => setOpen(false));
     </script>
   </body>
 </html>
@@ -209,7 +209,7 @@ const year = new Date().getFullYear();
   }
 
   /* Phones and tablets: navigation becomes a full-screen panel. */
-  @media (max-width: 59.99rem) {
+  @media (max-width: 63.99rem) {
     .menu-toggle {
       display: inline-flex;
       align-items: center;
