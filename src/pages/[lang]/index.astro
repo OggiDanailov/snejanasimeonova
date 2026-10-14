@@ -90,10 +90,10 @@ const categories = await Promise.all(
 </Base>
 
 <script>
-  // Crossfades the hero photo every 20 seconds through the slides listed in
+  // Crossfades the hero photo every 5 seconds through the slides listed in
   // data-slides. Two <img> layers take turns: the next photo is loaded into
   // the hidden one and only shown once it's ready.
-  const INTERVAL = 20_000;
+  const INTERVAL = 5_000;
   const figure = document.querySelector<HTMLElement>('.hero__image');
   const slides: { src: string; caption: string }[] = JSON.parse(figure?.dataset.slides ?? '[]');
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
