@@ -1,5 +1,9 @@
 // One-off migration: turns the legacy image folders into content entries.
 //
+// Already run; kept for reference. The old site and original images in
+// legacy/ were removed afterwards and can be restored from git history:
+//   git checkout 12760fc -- legacy
+//
 //   node scripts/migrate-images.mjs --dry-run   print what would be created
 //   node scripts/migrate-images.mjs             write images + YAML entries
 //
