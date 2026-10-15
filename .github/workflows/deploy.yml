@@ -11,7 +11,7 @@ name: Build and deploy
 
 on:
   push:
-    branches: [master, astro-rebuild]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
