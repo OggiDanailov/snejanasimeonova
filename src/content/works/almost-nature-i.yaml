@@ -1,6 +1,12 @@
-title:
-  en: "Almost nature I"
-  bg: "Почти природа I"
-category: media
 image: ../../assets/works/almost-nature-i.jpg
+rotate: "0"
+title:
+  en: Almost nature I
+  bg: Почти природа I
+category: media
+material:
+  en: Painted paper
+  bg: "Хартия "
+dimensions: 200х400х100 см
+year: 2014
 order: 10
