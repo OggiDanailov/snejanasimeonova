@@ -1,6 +1,12 @@
 image: ../../assets/works/fiery-dance-iii-c10e150c.jpg
+rotate: "0"
 title:
   en: Fiery dance III
   bg: Огнен танц III
 category: small
+material:
+  en: "Bronze "
+  bg: Бронз
+dimensions: 50х35х40 см
+year: 2005
 order: 210
