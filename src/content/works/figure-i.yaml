@@ -1,9 +1,11 @@
+image: ../../assets/works/figure-i.jpg
+rotate: "0"
 title:
-  en: "Figure I"
-  bg: "Фигура I"
+  en: "Figure "
+  bg: "Фигура "
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
-image: ../../assets/works/figure-i.jpg
+  en: "marble, black granite,  bronze "
+  bg: мрамор,  черен гранит, бронз
+year: 2005
 order: 260
