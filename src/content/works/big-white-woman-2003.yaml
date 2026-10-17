@@ -1,8 +1,12 @@
 image: ../../assets/works/big-white-woman-2003.jpg
+rotate: "0"
 title:
   en: Big white woman
   bg: Голямата бяла жена
 category: monumental
+material:
+  en: Marble,  sylvered bronze
+  bg: Мрамор, посребрен бронз
 dimensions: 280 × 110 × 50 cm
 year: 2003
 location:
