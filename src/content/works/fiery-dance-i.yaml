@@ -1,6 +1,15 @@
-title:
-  en: "Fiery dance I"
-  bg: "Огнен танц I"
-category: small
 image: ../../assets/works/fiery-dance-i.jpg
+rotate: "0"
+title:
+  en: Fiery dance I
+  bg: Огнен танц I
+category: small
+material:
+  en: "Bronze "
+  bg: Бронз
+dimensions: 50х35х40 см
+year: 2005
+location:
+  en: Private collection,  USA
+  bg: Частна колекция,  САЩ
 order: 190
