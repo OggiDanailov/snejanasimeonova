@@ -1,6 +1,10 @@
-title:
-  en: "Figure II"
-  bg: "Фигура II"
-category: small
 image: ../../assets/works/figure-ii.jpg
+rotate: "0"
+title:
+  en: Figure II
+  bg: Фигура II
+category: small
+material:
+  en: Black marble, bronze
+  bg: "Черен мрамор,  бронз "
 order: 280
