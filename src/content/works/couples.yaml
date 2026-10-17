@@ -1,6 +1,11 @@
-title:
-  en: "Couples"
-  bg: "Двойки"
-category: small
 image: ../../assets/works/couples.jpg
+rotate: "0"
+title:
+  en: Couple
+  bg: Двойка
+category: small
+material:
+  en: "Bronze "
+  bg: Бронз
+year: 2000
 order: 110
