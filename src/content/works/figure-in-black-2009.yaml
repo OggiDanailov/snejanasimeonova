@@ -1,11 +1,12 @@
 image: ../../assets/works/figure-in-black-2009-0e7f93c8.jpg
+rotate: "0"
 title:
   en: Figure in black
   bg: Фигура в черно
 category: monumental
 material:
-  en: marble
-  bg: мрамор
+  en: Black marble
+  bg: Черен мрамор
 dimensions: 80 × 60 × 40 cm
 year: 2009
 location:
