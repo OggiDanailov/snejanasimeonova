@@ -1,6 +1,12 @@
-title:
-  en: "Figure"
-  bg: "Фигура"
-category: monumental
 image: ../../assets/works/figure-3.jpg
+rotate: "0"
+title:
+  en: Figure
+  bg: Фигура
+category: monumental
+material:
+  en: Plaster
+  bg: Гипс
+dimensions: 200х50х40 см
+year: 1978
 order: 100
