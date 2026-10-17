@@ -1,6 +1,12 @@
-title:
-  en: "Almost nature III"
-  bg: "Почти природа III"
-category: media
 image: ../../assets/works/almost-nature-iii.jpg
+rotate: "90"
+title:
+  en: Almost nature II detail
+  bg: Почти природа II детайл
+category: media
+material:
+  en: Painted paper
+  bg: "Хартия "
+dimensions: "Variable "
+year: 2014
 order: 30
