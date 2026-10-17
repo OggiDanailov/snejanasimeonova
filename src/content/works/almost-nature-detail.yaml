@@ -1,6 +1,12 @@
 image: ../../assets/works/almost-nature-detail-7753340f.jpg
+rotate: "0"
 title:
   en: Almost nature (detail)
   bg: Почти природа (детайл)
 category: media
+material:
+  en: Paper
+  bg: "Хартия "
+dimensions: 200х400х100 см
+year: 2014
 order: 50
