@@ -1,11 +1,12 @@
+image: ../../assets/works/figure-i-2013.jpg
+rotate: "0"
 title:
-  en: "Figure I"
-  bg: "Фигура I"
+  en: "Figure "
+  bg: "Фигура "
 category: small
 material:
-  en: "wood"
-  bg: "дърво"
-dimensions: "80 × 35 × 30 cm"
+  en: wood
+  bg: дърво
+dimensions: 80 × 35 × 30 cm
 year: 2013
-image: ../../assets/works/figure-i-2013.jpg
 order: 270
