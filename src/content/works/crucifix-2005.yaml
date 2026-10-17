@@ -1,10 +1,14 @@
+image: ../../assets/works/crucifix-2005.jpg
+rotate: "0"
 title:
-  en: "Crucifix"
-  bg: "Разпятие"
+  en: Crucifixion
+  bg: Разпятие
 category: small
 material:
-  en: "bronze, stone"
-  bg: "бронз, камък"
+  en: "bronze, granite "
+  bg: "бронз, гранит "
 year: 2005
-image: ../../assets/works/crucifix-2005.jpg
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 140
