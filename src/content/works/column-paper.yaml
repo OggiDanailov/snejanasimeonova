@@ -1,6 +1,12 @@
-title:
-  en: "Column (paper)"
-  bg: "Колона (хартия)"
-category: media
 image: ../../assets/works/column-paper.jpg
+rotate: "0"
+title:
+  en: "Column "
+  bg: "Колона "
+category: media
+material:
+  en: "Paper "
+  bg: "Хартия "
+dimensions: 200x50x40 cm
+year: 1998
 order: 80
