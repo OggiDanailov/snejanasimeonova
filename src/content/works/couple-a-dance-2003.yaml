@@ -1,7 +1,11 @@
-title:
-  en: "Couple – A dance"
-  bg: "Двойка – Танц"
-category: small
-year: 2003
 image: ../../assets/works/couple-a-dance-2003.jpg
+rotate: "0"
+title:
+  en: Couple – A dance
+  bg: Двойка – Танц
+category: small
+material:
+  en: "Bronze "
+  bg: Бронз
+year: 2003
 order: 90
