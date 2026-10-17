@@ -1,6 +1,15 @@
-title:
-  en: "Bird (paper)"
-  bg: "Птица (хартия)"
-category: media
 image: ../../assets/works/bird-paper.jpg
+rotate: "0"
+title:
+  en: "Bird "
+  bg: "Птица "
+category: media
+material:
+  en: Paper
+  bg: "Хартия "
+dimensions: 250x40x60 cm
+year: 2001
+location:
+  en: Bulgaria
+  bg: "България "
 order: 60
