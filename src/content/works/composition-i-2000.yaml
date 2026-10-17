@@ -1,7 +1,15 @@
-title:
-  en: "Composition I"
-  bg: "Композиция I"
-category: small
-year: 2000
 image: ../../assets/works/composition-i-2000.jpg
+rotate: "0"
+title:
+  en: Composition I
+  bg: Композиция I
+category: small
+material:
+  en: Black marble,  bronze
+  bg: Черен мрамор,  бронз
+dimensions: 60х23х17 см
+year: 2000
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 50
