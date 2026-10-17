@@ -1,6 +1,12 @@
-title:
-  en: "Almost nature IV"
-  bg: "Почти природа IV"
-category: media
 image: ../../assets/works/almost-nature-iv.jpg
+rotate: "0"
+title:
+  en: Almost nature IV
+  bg: Почти природа IV
+category: media
+material:
+  en: Painted paper
+  bg: "Хартия "
+dimensions: 200x160x90 cm
+year: 2013
 order: 40
