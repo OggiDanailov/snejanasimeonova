@@ -1,9 +1,12 @@
+image: ../../assets/works/crowd.jpg
+rotate: "0"
 title:
-  en: "Crowd"
-  bg: "Тълпа"
+  en: Crowd
+  bg: Тълпа
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
-image: ../../assets/works/crowd.jpg
+  en: bronze
+  bg: бронз
+dimensions: 35х40х14 см
+year: 2001
 order: 120
