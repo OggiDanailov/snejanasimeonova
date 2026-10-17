@@ -1,7 +1,15 @@
 image: ../../assets/works/allegory-ii-2005.jpg
+rotate: "0"
 title:
   en: Allegory II
   bg: Алегория II
 category: small
+material:
+  en: Marble, bronze
+  bg: Мрамор, посребрен бронз
+dimensions: 50х10х10 см
 year: 2005
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 20
