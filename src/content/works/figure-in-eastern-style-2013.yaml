@@ -1,10 +1,14 @@
+image: ../../assets/works/figure-in-eastern-style-2013.jpg
+rotate: "0"
 title:
-  en: "Figure in eastern style"
-  bg: "Фигура в източен стил"
+  en: Figure in eastern style
+  bg: Фигура в източен стил
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
+  en: marble
+  bg: мрамор
 year: 2013
-image: ../../assets/works/figure-in-eastern-style-2013.jpg
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 320
