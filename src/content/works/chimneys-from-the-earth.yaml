@@ -1,6 +1,12 @@
-title:
-  en: "Chimneys from the earth"
-  bg: "Комини от земята"
-category: media
 image: ../../assets/works/chimneys-from-the-earth.jpg
+rotate: "0"
+title:
+  en: Chimneys from the earth
+  bg: Комини от земята
+category: media
+material:
+  en: Steel pipes, earth
+  bg: Стоманени тръби, земя
+dimensions: Variable
+year: 1993
 order: 70
