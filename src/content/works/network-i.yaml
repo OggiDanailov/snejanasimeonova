@@ -1,4 +1,5 @@
 image: ../../assets/works/network-i-2ad22ba6.jpg
+rotate: "0"
 title:
   en: Network I
   bg: Мрежа I
@@ -6,4 +7,9 @@ category: small
 material:
   en: marble
   bg: мрамор
+dimensions: 20х10х10 см
+year: 2013
+location:
+  en: Bulgaria
+  bg: България
 order: 510
