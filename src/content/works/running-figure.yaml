@@ -1,4 +1,5 @@
 image: ../../assets/works/running-figure-9e2a945e.jpg
+rotate: "0"
 title:
   en: Running figure
   bg: Бягаща фигура
@@ -7,6 +8,7 @@ material:
   en: bronze
   bg: бронз
 dimensions: 120 × 50 × 50 cm
+year: 1990
 location:
   en: Belgium
   bg: Белгия
