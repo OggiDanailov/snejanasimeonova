@@ -1,10 +1,15 @@
+image: ../../assets/works/network-ii-2.jpg
+rotate: "0"
 title:
-  en: "Network II"
-  bg: "Мрежа II"
+  en: Network II
+  bg: Мрежа II
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
-dimensions: "40 × 25 × 28 cm"
-image: ../../assets/works/network-ii-2.jpg
+  en: bronze
+  bg: бронз
+dimensions: 40 × 25 × 28 cm
+year: 1993
+location:
+  en: "Germany "
+  bg: "Германия "
 order: 540
