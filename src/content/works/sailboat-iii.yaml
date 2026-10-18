@@ -1,6 +1,15 @@
-title:
-  en: "Sailboat III"
-  bg: "Платноходка III"
-category: media
 image: ../../assets/works/sailboat-iii.jpg
+rotate: "0"
+title:
+  en: Sailboat III
+  bg: Платноходка III
+category: media
+material:
+  en: "Resin "
+  bg: "Полиестерна смола "
+dimensions: 170х100х100см
+year: 2008
+location:
+  en: Exhibition "Sailboats"
+  bg: Изложба" Платноходки"
 order: 300
