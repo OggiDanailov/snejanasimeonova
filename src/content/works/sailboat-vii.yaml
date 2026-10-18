@@ -1,6 +1,15 @@
-title:
-  en: "Sailboat VII"
-  bg: "Платноходка VII"
-category: media
 image: ../../assets/works/sailboat-vii.jpg
+rotate: "0"
+title:
+  en: "Sailboat - installation "
+  bg: Платноходка - инсталация
+category: media
+material:
+  en: "Resin,  paper, steel sticks, granite "
+  bg: "Смола, хартия, стоманени пръчки, гранит "
+dimensions: 200х1000х100 см
+year: 2008
+location:
+  en: Bulgaria
+  bg: България
 order: 340
