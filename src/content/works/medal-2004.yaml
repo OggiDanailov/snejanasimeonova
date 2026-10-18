@@ -1,11 +1,15 @@
+image: ../../assets/works/medal-2004.jpg
+rotate: "0"
 title:
-  en: "Medal"
-  bg: "Медал"
+  en: Medal
+  bg: Медал
 category: monumental
 material:
-  en: "limestone"
-  bg: "варовик"
-dimensions: "250 × 140 × 70 cm"
+  en: limestone
+  bg: варовик
+dimensions: 250 × 140 × 70 cm
 year: 2004
-image: ../../assets/works/medal-2004.jpg
+location:
+  en: Bulgaria
+  bg: България
 order: 170
