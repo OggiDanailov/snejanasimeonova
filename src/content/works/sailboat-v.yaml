@@ -1,6 +1,15 @@
-title:
-  en: "Sailboat V"
-  bg: "Платноходка V"
-category: media
 image: ../../assets/works/sailboat-v.jpg
+rotate: "0"
+title:
+  en: Sailboat V
+  bg: Платноходка V
+category: media
+material:
+  en: "Metal sheets, wood "
+  bg: "Метални листа , дърво "
+dimensions: 160х180х100см
+year: 2008
+location:
+  en: Exhibition "Sailboats"
+  bg: Изложба" Платноходки"
 order: 320
