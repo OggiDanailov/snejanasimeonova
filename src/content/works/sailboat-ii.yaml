@@ -1,6 +1,15 @@
-title:
-  en: "Sailboat II"
-  bg: "Платноходка II"
-category: media
 image: ../../assets/works/sailboat-ii.jpg
+rotate: "0"
+title:
+  en: Sailboat II
+  bg: Платноходка II
+category: media
+material:
+  en: Paper
+  bg: "Хартия "
+dimensions: 120х80х60 см
+year: 2008
+location:
+  en: Exhibition "Sailboats"
+  bg: Изложба" Платноходки"
 order: 290
