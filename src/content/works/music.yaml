@@ -1,13 +1,14 @@
+image: ../../assets/works/music.jpg
+rotate: "0"
 title:
-  en: "Music"
-  bg: "Музика"
+  en: Music
+  bg: Музика
 category: small
 material:
-  en: "marble, bronze"
-  bg: "мрамор, бронз"
-dimensions: "250 × 220 × 60 cm"
+  en: marble, bronze
+  bg: мрамор, бронз
+year: 2007
 location:
-  en: "Bulgaria"
-  bg: "България"
-image: ../../assets/works/music.jpg
+  en: Bulgaria
+  bg: България
 order: 490
