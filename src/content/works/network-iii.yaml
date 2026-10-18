@@ -1,9 +1,15 @@
+image: ../../assets/works/network-iii.jpg
+rotate: "0"
 title:
-  en: "Network III"
-  bg: "Мрежа III"
+  en: Network III
+  bg: Мрежа III
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
-image: ../../assets/works/network-iii.jpg
+  en: marble
+  bg: мрамор
+dimensions: 25х40х14 см
+year: 2019
+location:
+  en: Bulgaria
+  bg: България
 order: 550
