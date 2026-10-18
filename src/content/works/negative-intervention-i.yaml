@@ -1,6 +1,15 @@
-title:
-  en: "Negative intervention I"
-  bg: "Негативна намеса I"
-category: media
 image: ../../assets/works/negative-intervention-i.jpg
+rotate: "0"
+title:
+  en: Negative intervention I
+  bg: Негативна намеса I
+category: media
+material:
+  en: Branches,  bands, plaster
+  bg: Клони, ленти, гипс
+dimensions: 190х100х50 см
+year: 1993
+location:
+  en: Bulgaria
+  bg: България
 order: 110
