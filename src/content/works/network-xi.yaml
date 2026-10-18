@@ -1,6 +1,15 @@
-title:
-  en: "Network XI"
-  bg: "Мрежа XI"
-category: small
 image: ../../assets/works/network-xi.jpg
+rotate: "0"
+title:
+  en: Network XI
+  bg: Мрежа XI
+category: small
+material:
+  en: "Bronze "
+  bg: Бронз
+dimensions: 45х70х23 см
+year: 1993
+location:
+  en: "Private collection,  Switzerland "
+  bg: "Частна колекция,  Швейцария "
 order: 640
