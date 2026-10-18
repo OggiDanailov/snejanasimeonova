@@ -1,6 +1,15 @@
-title:
-  en: "Haus Wittgenstein exhibition"
-  bg: "Изложба в Хаус Витгенщайн"
-category: small
 image: ../../assets/works/haus-wittgenstein-exhibition.jpg
+rotate: "0"
+title:
+  en: White figure
+  bg: "Бяла фигура "
+category: small
+material:
+  en: marble, bronze
+  bg: Мрамор, посребрен бронз
+dimensions: 40х10х10 см
+year: 2001
+location:
+  en: "Private collection,  Belgium "
+  bg: Частна колекция,  Белгия
 order: 390
