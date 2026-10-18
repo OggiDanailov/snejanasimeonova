@@ -1,6 +1,15 @@
-title:
-  en: "Network VI"
-  bg: "Мрежа VI"
-category: small
 image: ../../assets/works/network-vi.jpg
+rotate: "0"
+title:
+  en: Network VI
+  bg: Мрежа VI
+category: small
+material:
+  en: "Bronze "
+  bg: Бронз
+dimensions: 70х15х15 см
+year: 1993
+location:
+  en: "Germany "
+  bg: "Германия "
 order: 590
