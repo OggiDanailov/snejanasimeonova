@@ -1,6 +1,15 @@
-title:
-  en: "Sailboat I"
-  bg: "Платноходка I"
-category: media
 image: ../../assets/works/sailboat-i.jpg
+rotate: "0"
+title:
+  en: Sailboat I
+  bg: Платноходка I
+category: media
+material:
+  en: Depron
+  bg: Депрон
+dimensions: 180х120х100 см
+year: 2008
+location:
+  en: Exhibition "Sailboats"
+  bg: Изложба" Платноходки"
 order: 280
