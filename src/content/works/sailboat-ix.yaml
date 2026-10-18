@@ -1,6 +1,15 @@
-title:
-  en: "Sailboat IX"
-  bg: "Платноходка IX"
-category: media
 image: ../../assets/works/sailboat-ix.jpg
+rotate: "0"
+title:
+  en: Sailboat IX
+  bg: Платноходка IX
+category: media
+material:
+  en: Paper, wooden sticks
+  bg: "Хартия, дървени пръчки "
+dimensions: 160х150х80см
+year: 2008
+location:
+  en: Exhibition "Sailboats"
+  bg: Изложба" Платноходки"
 order: 360
