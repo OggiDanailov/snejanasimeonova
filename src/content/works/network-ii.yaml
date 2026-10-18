@@ -1,9 +1,12 @@
+image: ../../assets/works/network-ii.jpg
+rotate: "0"
 title:
-  en: "Network II"
-  bg: "Мрежа II"
+  en: Network II
+  bg: Мрежа II
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
-image: ../../assets/works/network-ii.jpg
+  en: marble
+  bg: мрамор
+dimensions: 30х15х13 см
+year: 2018
 order: 530
