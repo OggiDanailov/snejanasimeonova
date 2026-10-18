@@ -1,14 +1,15 @@
+image: ../../assets/works/music-ii-2013.jpg
+rotate: "0"
 title:
-  en: "Music II"
-  bg: "Музика II"
+  en: Music I - back side
+  bg: Музика I
 category: monumental
 material:
-  en: "marble"
-  bg: "мрамор"
-dimensions: "330 × 200 × 100 cm"
+  en: marble
+  bg: мрамор
+dimensions: 330 × 200 × 100 cm
 year: 2013
 location:
-  en: "China"
-  bg: "Китай"
-image: ../../assets/works/music-ii-2013.jpg
+  en: China
+  bg: Китай
 order: 200
