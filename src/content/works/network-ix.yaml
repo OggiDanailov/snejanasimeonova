@@ -1,6 +1,15 @@
-title:
-  en: "Network IX"
-  bg: "Мрежа IX"
-category: small
 image: ../../assets/works/network-ix.jpg
+rotate: "0"
+title:
+  en: Network IX
+  bg: Мрежа IX
+category: small
+material:
+  en: "Bronze "
+  bg: Бронз
+dimensions: 70х70х60 см
+year: 1989
+location:
+  en: Bulgaria
+  bg: България
 order: 620
