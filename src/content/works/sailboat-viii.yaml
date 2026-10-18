@@ -1,6 +1,12 @@
-title:
-  en: "Sailboat VIII"
-  bg: "Платноходка VIII"
-category: media
 image: ../../assets/works/sailboat-viii.jpg
+rotate: "0"
+title:
+  en: Sailboat VIII
+  bg: Платноходка VIII
+category: media
+material:
+  en: Metal sheets,  wood
+  bg: "Метални листа , дърво "
+dimensions: 160х220х200 см.
+year: 2008
 order: 350
