@@ -1,10 +1,14 @@
+image: ../../assets/works/muse.jpg
+rotate: "0"
 title:
-  en: "Muse"
-  bg: "Муза"
+  en: Muse
+  bg: Муза
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
-dimensions: "60 × 15 × 12 cm"
-image: ../../assets/works/muse.jpg
+  en: marble
+  bg: мрамор
+dimensions: 60 × 15 × 12 cm
+location:
+  en: Bulgaria
+  bg: България
 order: 480
