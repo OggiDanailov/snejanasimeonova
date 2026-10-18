@@ -9,4 +9,7 @@ material:
   bg: "Метални листа , дърво "
 dimensions: 160х220х200 см.
 year: 2008
+location:
+  en: Exhibition "Sailboats"
+  bg: Изложба" Платноходки"
 order: 350
