@@ -1,10 +1,15 @@
+image: ../../assets/works/network-i-2.jpg
+rotate: "0"
 title:
-  en: "Network I"
-  bg: "Мрежа I"
+  en: Network I
+  bg: Мрежа I
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
-dimensions: "25 × 35 × 35 cm"
-image: ../../assets/works/network-i-2.jpg
+  en: bronze
+  bg: бронз
+dimensions: 25 × 35 × 35 cm
+year: 1993
+location:
+  en: "Germany "
+  bg: "Германия "
 order: 520
