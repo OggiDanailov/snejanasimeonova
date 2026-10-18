@@ -1,10 +1,15 @@
+image: ../../assets/works/nature.jpg
+rotate: "0"
 title:
-  en: "Nature"
-  bg: "Природа"
+  en: Nature
+  bg: Природа
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
-dimensions: "50 × 18 × 20 cm"
-image: ../../assets/works/nature.jpg
+  en: marble
+  bg: мрамор
+dimensions: 50 × 18 × 20 cm
+year: 2016
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 500
