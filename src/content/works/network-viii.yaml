@@ -1,6 +1,14 @@
-title:
-  en: "Network VIII"
-  bg: "Мрежа VIII"
-category: small
 image: ../../assets/works/network-viii.jpg
+rotate: "0"
+title:
+  en: Network VIII
+  bg: Мрежа VIII
+category: small
+material:
+  en: "Bronze "
+  bg: Бронз
+year: 1994
+location:
+  en: "Stolen in Bulgaria "
+  bg: "Открадната в България "
 order: 610
