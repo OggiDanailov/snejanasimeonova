@@ -1,6 +1,15 @@
-title:
-  en: "No contact I"
-  bg: "Без контакт I"
-category: media
 image: ../../assets/works/no-contact-i.jpg
+rotate: "0"
+title:
+  en: No contact I
+  bg: Без контакт I
+category: media
+material:
+  en: Wooden sticks
+  bg: Дървени пръчици
+dimensions: "Variable "
+year: 2012
+location:
+  en: Exhibition " No contact"
+  bg: Изложба " No contact "
 order: 160
