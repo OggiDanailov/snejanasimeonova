@@ -1,10 +1,15 @@
+image: ../../assets/works/network-iv.jpg
+rotate: "0"
 title:
-  en: "Network IV"
-  bg: "Мрежа IV"
+  en: Network IV
+  bg: Мрежа IV
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
-dimensions: "160 × 40 × 30 cm"
-image: ../../assets/works/network-iv.jpg
+  en: bronze
+  bg: бронз
+dimensions: 160 × 40 × 30 cm
+year: 1993
+location:
+  en: "Germany "
+  bg: "Германия "
 order: 570
