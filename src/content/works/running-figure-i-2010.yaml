@@ -1,10 +1,14 @@
+image: ../../assets/works/running-figure-i-2010.jpg
+rotate: "0"
 title:
-  en: "Running figure I"
-  bg: "Бягаща фигура I"
+  en: Running figure I
+  bg: Бягаща фигура I
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
+  en: bronze
+  bg: бронз
 year: 2010
-image: ../../assets/works/running-figure-i-2010.jpg
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 700
