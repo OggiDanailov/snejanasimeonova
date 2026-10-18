@@ -1,6 +1,12 @@
-title:
-  en: "Piece of nature II"
-  bg: "Късче природа II"
-category: small
 image: ../../assets/works/piece-of-nature-ii.jpg
+rotate: "0"
+title:
+  en: Piece of nature II
+  bg: Късче природа II
+category: small
+material:
+  en: marble
+  bg: мрамор
+dimensions: 15х10х7 см
+year: 2007
 order: 670
