@@ -1,9 +1,15 @@
-title:
-  en: "Two figures"
-  bg: "Две фигури"
-category: small
-location:
-  en: "Germany"
-  bg: "Германия"
 image: ../../assets/works/two-figures.jpg
+rotate: "0"
+title:
+  en: Two figures
+  bg: Две фигури
+category: small
+material:
+  en: "Bronze "
+  bg: бронз
+dimensions: 50х70х40 см
+year: 2005
+location:
+  en: Bulgaria
+  bg: България
 order: 970
