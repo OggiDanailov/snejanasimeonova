@@ -1,7 +1,15 @@
-title:
-  en: "Tree I"
-  bg: "Дърво I"
-category: small
-year: 2011
 image: ../../assets/works/tree-i-2011.jpg
+rotate: "0"
+title:
+  en: Tree I
+  bg: Дърво I
+category: small
+material:
+  en: "Bronze "
+  bg: Бронз
+dimensions: 20х7х10 см
+year: 2011
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 950
