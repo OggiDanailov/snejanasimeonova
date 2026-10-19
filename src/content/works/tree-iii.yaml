@@ -1,6 +1,15 @@
-title:
-  en: "Tree III"
-  bg: "Дърво III"
-category: small
 image: ../../assets/works/tree-iii.jpg
+rotate: "0"
+title:
+  en: Tree III
+  bg: Дърво III
+category: small
+material:
+  en: bronze
+  bg: Бронз
+dimensions: 20х14х14 см
+year: 2011
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 960
