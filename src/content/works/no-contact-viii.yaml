@@ -1,6 +1,15 @@
 image: ../../assets/works/no-contact-viii-d15521ab.jpg
+rotate: "0"
 title:
-  en: No contact VIII
-  bg: Без контакт VIII
+  en: No contact VIII- window
+  bg: Без контакт VIII- прозорец
 category: media
+material:
+  en: Wood, wooden sticks
+  bg: Дърво, дървени пръчици
+dimensions: 70х50х20 см
+year: 2012
+location:
+  en: Exhibition " No contact"
+  bg: Изложба " No contact "
 order: 230
