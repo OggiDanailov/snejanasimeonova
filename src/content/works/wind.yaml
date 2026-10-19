@@ -1,9 +1,15 @@
+image: ../../assets/works/wind.jpg
+rotate: "0"
 title:
-  en: "Wind"
-  bg: "Вятър"
+  en: Wind
+  bg: Вятър
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
-image: ../../assets/works/wind.jpg
+  en: marble
+  bg: мрамор
+dimensions: 50х12х14 см
+year: 2007
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 1040
