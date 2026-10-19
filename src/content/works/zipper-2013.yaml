@@ -1,10 +1,15 @@
+image: ../../assets/works/zipper-2013.jpg
+rotate: "0"
 title:
-  en: "Zipper"
-  bg: "Цип"
+  en: Zipper
+  bg: Цип
 category: small
+material:
+  en: marble
+  bg: мрамор
+dimensions: 10х25х50 см
 year: 2013
 location:
-  en: "Ilindentsi, Bulgaria"
-  bg: "Илинденци, България"
-image: ../../assets/works/zipper-2013.jpg
+  en: Ilindentsi, Bulgaria
+  bg: Илинденци, България
 order: 1060
