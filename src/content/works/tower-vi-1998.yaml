@@ -1,14 +1,15 @@
+image: ../../assets/works/tower-vi-1998.jpg
+rotate: "0"
 title:
-  en: "Tower VI"
-  bg: "Кула VI"
+  en: Tower VI
+  bg: Кула VI
 category: monumental
 material:
-  en: "black marble, bronze"
-  bg: "черен мрамор, бронз"
-dimensions: "170 × 35 × 30 cm"
+  en: black marble, bronze
+  bg: черен мрамор, бронз
+dimensions: 170 × 35 × 30 cm
 year: 1998
 location:
-  en: "Bulgaria"
-  bg: "България"
-image: ../../assets/works/tower-vi-1998.jpg
+  en: 'Exhibition" Towers", Hugo Voeten collection,  Belgium '
+  bg: 'Изложба "Кули", колекция Хуго Вутен, Белгия '
 order: 380
