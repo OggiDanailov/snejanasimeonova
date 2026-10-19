@@ -1,9 +1,12 @@
+image: ../../assets/works/sunrise.jpg
+rotate: "0"
 title:
-  en: "Sunrise"
-  bg: "Изгрев"
+  en: Sunrise
+  bg: Изгрев
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
-image: ../../assets/works/sunrise.jpg
+  en: marble
+  bg: мрамор
+dimensions: 20х18х9 см
+year: 2005
 order: 800
