@@ -1,6 +1,15 @@
-title:
-  en: "No contact X"
-  bg: "Без контакт X"
-category: media
 image: ../../assets/works/no-contact-x.jpg
+rotate: "0"
+title:
+  en: No contact X
+  bg: Без контакт X
+category: media
+material:
+  en: Wood, wooden sticks
+  bg: Дърво, дървени пръчици
+dimensions: 50х35х7 см
+year: 2012
+location:
+  en: Exhibition " No contact"
+  bg: Изложба " No contact "
 order: 250
