@@ -1,6 +1,15 @@
-title:
-  en: "Seated figure"
-  bg: "Седнала фигура"
-category: small
 image: ../../assets/works/seated-figure-2.jpg
+rotate: "0"
+title:
+  en: Seated figure
+  bg: Седнала фигура
+category: small
+material:
+  en: Black marble,  bronze
+  bg: Черен мрамор,  бронз
+dimensions: 35х25х10 см.
+year: 1995
+location:
+  en: "Hugo Voeten collection "
+  bg: Колекция Хуго Вутен
 order: 750
