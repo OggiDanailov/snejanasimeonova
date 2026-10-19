@@ -1,10 +1,15 @@
+image: ../../assets/works/the-big-bang.jpg
+rotate: "0"
 title:
-  en: "The Big Bang"
-  bg: "Големият взрив"
+  en: The Big Bang
+  bg: Големият взрив
 category: small
 material:
-  en: "bronze, black marble"
-  bg: "бронз, черен мрамор"
-dimensions: "80 × 45 × 25 cm"
-image: ../../assets/works/the-big-bang.jpg
+  en: bronze, black marble
+  bg: бронз, черен мрамор
+dimensions: 80 × 45 × 25 cm
+year: 2007
+location:
+  en: Private collection,  USA
+  bg: Частна колекция,  САЩ
 order: 810
