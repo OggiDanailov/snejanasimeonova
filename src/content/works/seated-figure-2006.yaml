@@ -1,7 +1,12 @@
-title:
-  en: "Seated figure"
-  bg: "Седнала фигура"
-category: small
-year: 2006
 image: ../../assets/works/seated-figure-2006.jpg
+rotate: "0"
+title:
+  en: Seated figure
+  bg: Седнала фигура
+category: small
+material:
+  en: "marble, bronze "
+  bg: Мрамор, посребрен бронз
+dimensions: 35х18х17 см
+year: 2006
 order: 770
