@@ -1,6 +1,15 @@
-title:
-  en: "Samurai I"
-  bg: "Самурай I"
-category: small
 image: ../../assets/works/samurai-i.jpg
+rotate: "0"
+title:
+  en: Samurai I
+  bg: Самурай I
+category: small
+material:
+  en: Black marble,  bronze
+  bg: Черен мрамор,  бронз
+dimensions: 60х15х10 см
+year: 2005
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 730
