@@ -1,6 +1,15 @@
-title:
-  en: "No contact IX"
-  bg: "Без контакт IX"
-category: media
 image: ../../assets/works/no-contact-ix.jpg
+rotate: "0"
+title:
+  en: No contact IX
+  bg: Без контакт IX
+category: media
+material:
+  en: Wood, wooden sticks
+  bg: Дърво, дървени пръчици
+dimensions: 50х35х7см
+year: 2012
+location:
+  en: Exhibition " No contact"
+  bg: Изложба " No contact "
 order: 240
