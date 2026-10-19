@@ -1,6 +1,15 @@
-title:
-  en: "No contact IV"
-  bg: "Без контакт IV"
-category: media
 image: ../../assets/works/no-contact-iv.jpg
+rotate: "0"
+title:
+  en: No contact IV
+  bg: Без контакт IV
+category: media
+material:
+  en: "Wooden sticks mirror "
+  bg: "Дървени пръчици, огледало "
+dimensions: "Variable "
+year: 2012
+location:
+  en: Exhibition " No contact"
+  bg: Изложба " No contact "
 order: 190
