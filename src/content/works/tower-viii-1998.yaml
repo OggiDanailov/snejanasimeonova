@@ -1,4 +1,5 @@
 image: ../../assets/works/tower-viii-1998.jpg
+rotate: "0"
 title:
   en: Tower VIII
   bg: Кула VIII
@@ -9,6 +10,6 @@ material:
 dimensions: 280 × 60 × 60 cm
 year: 1998
 location:
-  en: Belgium
-  bg: Белгия
+  en: 'Exhibition " Towers ", Hugo Voeten collection,  Belgium '
+  bg: 'Изложба " Кули ", Колекция Хуго Вутен,  Белгия '
 order: 400
