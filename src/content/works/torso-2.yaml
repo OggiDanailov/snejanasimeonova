@@ -1,4 +1,5 @@
 image: ../../assets/works/torso-2-276c0802.jpg
+rotate: "0"
 title:
   en: Torso
   bg: Торс
@@ -7,7 +8,8 @@ material:
   en: bronze
   bg: бронз
 dimensions: 100 × 60 × 45 cm
+year: 1989
 location:
-  en: Belgium
-  bg: Белгия
+  en: Hugo Voeten collection, Belgium
+  bg: Колекция Хуго Вутен, Белгия
 order: 870
