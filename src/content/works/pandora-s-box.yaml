@@ -1,10 +1,15 @@
+image: ../../assets/works/pandora-s-box.jpg
+rotate: "0"
 title:
-  en: "Pandora's box"
-  bg: "Кутията на Пандора"
+  en: Pandora's box
+  bg: Кутията на Пандора
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
-dimensions: "60 × 20 × 20 cm"
-image: ../../assets/works/pandora-s-box.jpg
+  en: marble
+  bg: мрамор
+dimensions: 60 × 20 × 20 cm
+year: 2005
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 650
