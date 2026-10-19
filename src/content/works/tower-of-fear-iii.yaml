@@ -1,6 +1,15 @@
-title:
-  en: "Tower of fear III"
-  bg: "Кула на страха III"
-category: small
 image: ../../assets/works/tower-of-fear-iii.jpg
+rotate: "0"
+title:
+  en: Tower of fear III
+  bg: Кула на страха III
+category: small
+material:
+  en: "Bronze "
+  bg: бронз
+dimensions: 30х25х15 см
+year: 1993
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 910
