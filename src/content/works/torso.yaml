@@ -1,6 +1,15 @@
-title:
-  en: "Torso"
-  bg: "Торс"
-category: small
 image: ../../assets/works/torso.jpg
+rotate: "0"
+title:
+  en: Torso
+  bg: Торс
+category: small
+material:
+  en: marble
+  bg: мрамор
+dimensions: 20х17х9 см
+year: 1999
+location:
+  en: "Japan "
+  bg: "Япония "
 order: 860
