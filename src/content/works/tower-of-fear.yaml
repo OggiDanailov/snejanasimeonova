@@ -1,4 +1,5 @@
 image: ../../assets/works/tower-of-fear-22fc100b.jpg
+rotate: "0"
 title:
   en: Tower of fear
   bg: Кула на страха
@@ -6,4 +7,9 @@ category: small
 material:
   en: bronze, stone
   bg: бронз, камък
+dimensions: 35х14х14 см
+year: 1994
+location:
+  en: Bulgaria
+  bg: България
 order: 880
