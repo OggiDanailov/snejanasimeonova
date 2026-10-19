@@ -1,13 +1,15 @@
+image: ../../assets/works/wall.jpg
+rotate: "0"
 title:
-  en: "Wall"
-  bg: "Стена"
+  en: Wall
+  bg: Стена
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
-dimensions: "80 × 100 × 35 cm"
+  en: bronze
+  bg: бронз
+dimensions: 80 × 100 × 35 cm
+year: 1989
 location:
-  en: "Belgium"
-  bg: "Белгия"
-image: ../../assets/works/wall.jpg
+  en: Hugo Voeten collection, Belgium
+  bg: Колекция Хуго Вутен, Белгия
 order: 1030
