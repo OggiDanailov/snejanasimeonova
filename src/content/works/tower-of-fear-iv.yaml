@@ -1,6 +1,10 @@
-title:
-  en: "Tower of fear IV"
-  bg: "Кула на страха IV"
-category: small
 image: ../../assets/works/tower-of-fear-iv.jpg
+rotate: "0"
+title:
+  en: Tower of fear IV
+  bg: Кула на страха IV
+category: small
+material:
+  en: "Bronze "
+  bg: бронз
 order: 920
