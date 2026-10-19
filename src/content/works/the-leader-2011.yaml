@@ -1,7 +1,15 @@
-title:
-  en: "The leader"
-  bg: "Водачът"
-category: small
-year: 2011
 image: ../../assets/works/the-leader-2011.jpg
+rotate: "0"
+title:
+  en: The leader
+  bg: Водачът
+category: small
+material:
+  en: "Bronze "
+  bg: бронз
+dimensions: 25х15х10 см
+year: 2011
+location:
+  en: "Private collection,  Bulgaria "
+  bg: "Частна колекция,  България "
 order: 820
