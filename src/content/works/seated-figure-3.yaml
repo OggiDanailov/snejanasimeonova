@@ -1,13 +1,15 @@
+image: ../../assets/works/seated-figure-3.jpg
+rotate: "0"
 title:
-  en: "Seated figure"
-  bg: "Седнала фигура"
+  en: Seated figure
+  bg: Седнала фигура
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
-dimensions: "85 × 70 × 50 cm"
+  en: bronze
+  bg: бронз
+dimensions: 85 × 70 × 50 cm
+year: 1988
 location:
-  en: "Belgium"
-  bg: "Белгия"
-image: ../../assets/works/seated-figure-3.jpg
+  en: Hugo Voeten collection, Belgium
+  bg: Колекция Хуго Вутен, Белгия
 order: 760
