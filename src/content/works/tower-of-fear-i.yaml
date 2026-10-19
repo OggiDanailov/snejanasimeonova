@@ -1,9 +1,15 @@
+image: ../../assets/works/tower-of-fear-i.jpg
+rotate: "0"
 title:
-  en: "Tower of fear I"
-  bg: "Кула на страха I"
+  en: Tower of fear I
+  bg: Кула на страха I
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
-image: ../../assets/works/tower-of-fear-i.jpg
+  en: bronze
+  bg: бронз
+dimensions: 40х20х15 см
+year: 1994
+location:
+  en: "Private collection,  Switzerland "
+  bg: "Частна колекция,  Швейцария "
 order: 890
