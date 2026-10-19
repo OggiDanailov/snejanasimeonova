@@ -1,9 +1,12 @@
+image: ../../assets/works/tree.jpg
+rotate: "0"
 title:
-  en: "Tree"
-  bg: "Дърво"
+  en: Tree
+  bg: Дърво
 category: small
 material:
-  en: "marble"
-  bg: "мрамор"
-image: ../../assets/works/tree.jpg
+  en: marble
+  bg: мрамор
+dimensions: 35х25х10 см
+year: 2006
 order: 940
