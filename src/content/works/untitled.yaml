@@ -1,6 +1,15 @@
-title:
-  en: "Untitled"
-  bg: "Без заглавие"
-category: small
 image: ../../assets/works/untitled.jpg
+rotate: "0"
+title:
+  en: Untitled
+  bg: Без заглавие
+category: small
+material:
+  en: bronze
+  bg: Бронз
+dimensions: "Variable "
+year: 2000
+location:
+  en: "Hungary "
+  bg: "Унгария "
 order: 980
