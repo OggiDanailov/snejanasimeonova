@@ -1,6 +1,15 @@
-title:
-  en: "No contact III"
-  bg: "Без контакт III"
-category: media
 image: ../../assets/works/no-contact-iii.jpg
+rotate: "0"
+title:
+  en: "No contact I- detail "
+  bg: Без контакт I- детайл
+category: media
+material:
+  en: Wooden sticks
+  bg: Дървени пръчици
+dimensions: "Variable "
+year: 2012
+location:
+  en: Private collection,  Bulgaria, exhibition " No contact "
+  bg: "Частна колекция,  България "
 order: 180
