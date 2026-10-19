@@ -1,6 +1,12 @@
-title:
-  en: "Untitled"
-  bg: "Без заглавие"
-category: small
 image: ../../assets/works/untitled-4.jpg
+rotate: "0"
+title:
+  en: "Sailboat "
+  bg: "Платноходка "
+category: small
+material:
+  en: marble
+  bg: мрамор
+dimensions: 50х30х18 см
+year: 2006
 order: 1010
