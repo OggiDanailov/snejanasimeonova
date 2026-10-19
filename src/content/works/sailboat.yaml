@@ -1,9 +1,12 @@
+image: ../../assets/works/sailboat.jpg
+rotate: "0"
 title:
-  en: "Sailboat"
-  bg: "Платноходка"
+  en: Sailboat
+  bg: Платноходка
 category: small
 material:
-  en: "bronze"
-  bg: "бронз"
-image: ../../assets/works/sailboat.jpg
+  en: bronze
+  bg: бронз
+dimensions: 25х45х15см
+year: 2006
 order: 720
