@@ -1,6 +1,15 @@
-title:
-  en: "Tower"
-  bg: "Кула"
-category: media
 image: ../../assets/works/tower.jpg
+rotate: "0"
+title:
+  en: Tower
+  bg: Кула
+category: media
+material:
+  en: Branches,  grass, earth, plaster
+  bg: Клони, трева, земя, гипс
+dimensions: 220х50х50см
+year: 1995
+location:
+  en: "South Africa "
+  bg: "Южна Африка "
 order: 370
