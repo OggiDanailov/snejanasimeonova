@@ -9,4 +9,7 @@ material:
   bg: Дърво, дървени пръчици
 dimensions: 50х35х7см
 year: 2012
+location:
+  en: Exhibition " No contact"
+  bg: Изложба " No contact "
 order: 260
