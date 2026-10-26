@@ -2,8 +2,13 @@ image: ../../assets/works/self-portrait-bronze-black-rhiolit-50x12x18-1978-2025.
 rotate: "0"
 title:
   en: Self-portrait
+  bg: Автопортрет
 category: small
 material:
   en: bronze, black rhyolite
+  bg: бронз, черен риолит
 dimensions: 50x20x18 cm
+year: 1978
+location:
+  bg: България
 order: 1000
