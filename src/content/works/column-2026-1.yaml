@@ -1,0 +1,12 @@
+image: ../../assets/works/column-marble-90x30x17-cm.jpg
+rotate: "0"
+title:
+  en: Column
+  bg: Колона
+category: monumental
+material:
+  en: marble
+  bg: Мрамор
+dimensions: 90x30x17 cm
+year: 2023
+order: 1000
