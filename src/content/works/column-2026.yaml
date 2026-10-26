@@ -1,0 +1,15 @@
+image: ../../assets/works/column-ii-black-marble-170x34x31-cm-2025.jpg
+rotate: "0"
+title:
+  en: Column
+  bg: Колона
+category: monumental
+material:
+  en: "Black limestone "
+  bg: черен мраморизиран варовик
+dimensions: 170x35x31 cm
+year: 2023
+location:
+  en: Bulgaria
+  bg: България
+order: 1000
