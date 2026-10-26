@@ -1,0 +1,12 @@
+image: ../../assets/works/wind-1.jpg
+rotate: "0"
+title:
+  en: Wind
+  bg: Вятър
+category: monumental
+material:
+  en: marble
+  bg: мрамор
+dimensions: 110x60x25 cm
+year: 2024
+order: 1000
